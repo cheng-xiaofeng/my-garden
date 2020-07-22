@@ -1,3 +1,7 @@
+根据node官网翻译成中文,原文地址https://nodejs.dev/learn/introduction-to-nodejs
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
