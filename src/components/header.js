@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout, Menu   } from 'antd'
+import { Layout, Menu } from 'antd'
 import {
   Link
 } from 'react-router-dom'

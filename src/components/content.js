@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
   Switch,
   Route,
-  Link
 } from 'react-router-dom'
 import NodeContent from './pages/node'
 import BlogContent from './pages/blog'

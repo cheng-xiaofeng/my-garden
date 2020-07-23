@@ -5,7 +5,6 @@ import {
 } from 'react-router-dom'
 import MainHeader from './header'
 import MainContent from './content'
-import { routers } from './constants'
 
 class Index extends Component {
   render() {
