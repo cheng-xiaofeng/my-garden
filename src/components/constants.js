@@ -35,6 +35,24 @@ import AsyncFunction from './pages/node/AsyncFunction'
 import EventEmitter from './pages/node/EventEmitter'
 import BuildHttpServer from './pages/node/BuildHttpServer'
 import PerformHttpRequest from './pages/node/PerformHttpRequest'
+import PerformPostRequest from './pages/node/PerformPostRequest'
+import RequestBody from './pages/node/RequestBody'
+import FileDescriptor from './pages/node/FileDescriptor'
+import FileStats from './pages/node/FileStats'
+import FilePath from './pages/node/FilePath'
+import ReadingFile from './pages/node/ReadingFile'
+import WritingFile from './pages/node/WritingFile'
+import WorkingFolder from './pages/node/WorkingFolder'
+import FsModule from './pages/node/FsModule'
+import PathModule from './pages/node/PathModule'
+import OSModule from './pages/node/OSModule'
+import EventsModule from './pages/node/EventsModule'
+import HttpModule from './pages/node/HttpModule'
+import BufferData from './pages/node/BufferData'
+import StreamData from './pages/node/StreamData'
+import EnvironmentDiffrence from './pages/node/EnvironmentDiffrence'
+import HandlingError from './pages/node/HandlingError'
+import LogObject from './pages/node/LogObject'
 const routers = [{
   index: 1,
   name: 'node简介',
@@ -258,113 +276,113 @@ const routers = [{
   path: '/httpRequest',
   component: PerformHttpRequest
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 38,
+  name: 'post请求',
+  to: '/postRequest',
+  path: '/postRequest',
+  component: PerformPostRequest
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 39,
+  name: 'request body',
+  to: '/requestBody',
+  path: '/requestBody',
+  component: RequestBody
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 40,
+  name: '文件描述符',
+  to: '/fileDescriptor',
+  path: '/fileDescriptor',
+  component: FileDescriptor
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 41,
+  name: 'stats',
+  to: '/stats',
+  path: '/stats',
+  component: FileStats
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 42,
+  name: '文件路径',
+  to: '/filePath',
+  path: '/filePath',
+  component: FilePath
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 43,
+  name: '读取文件',
+  to: '/readingFile',
+  path: '/readingFile',
+  component: ReadingFile
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 44,
+  name: '写入文件',
+  to: '/writingFile',
+  path: '/writingFile',
+  component: WritingFile
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 45,
+  name: '操作文件夹',
+  to: '/folder',
+  path: '/folder',
+  component: WorkingFolder
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 46,
+  name: 'fs模块',
+  to: '/fsModule',
+  path: '/fsModule',
+  component: FsModule
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 47,
+  name: 'path模块',
+  to: '/pathModule',
+  path: '/pathModule',
+  component: PathModule
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 48,
+  name: 'os模块',
+  to: '/osModule',
+  path: '/osModule',
+  component: OSModule
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 49,
+  name: 'events模块',
+  to: '/eventsModule',
+  path: '/eventsModule',
+  component: EventsModule
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 50,
+  name: 'http模块',
+  to: '/httpModule',
+  path: '/httpModule',
+  component: HttpModule
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 51,
+  name: 'buffer',
+  to: '/buffer',
+  path: '/buffer',
+  component: BufferData
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 52,
+  name: 'stream',
+  to: '/stream',
+  path: '/stream',
+  component: StreamData
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 53,
+  name: '开发与生产环境',
+  to: '/environmentDiffrence',
+  path: '/environmentDiffrence',
+  component: EnvironmentDiffrence
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 54,
+  name: '错误处理',
+  to: '/errorHandling',
+  path: '/errorHandling',
+  component: HandlingError
 }, {
-  index: ,
-  name: '',
-  to: '/',
-  path: '/',
-  component: 
+  index: 55,
+  name: 'log',
+  to: '/logObject',
+  path: '/logObject',
+  component: LogObject
 }, ]
 
 export {
