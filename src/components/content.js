@@ -1,37 +1,20 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from 'react-router-dom'
-import { Layout, Menu   } from 'antd'
-import { routers } from './constants'
-const { Sider } =  Layout
-class Content extends Component {
+import NodeContent from './pages/node'
+import BlogContent from './pages/blog'
+class MainContent extends Component {
   render() {
     return (
-      <Layout style={{boxSizing: 'border-box', height: '100%', paddingTop: 64 }}>
-        <Sider style={{height: '100%'}}>
-          <Menu theme="dark" mode="vertical" style={{height: '100%', overflow: 'auto'}}>
-            {routers.map(item => {
-              return (<Menu.Item key={item.index}>
-                        <Link to={item.to}>{item.name}</Link>
-                      </Menu.Item>)
-            })}
-              
-          </Menu>
-        </Sider>
-        <Content>
-          <Switch>
-            {routers.map((item, index) => {
-              return <Route key={index} path={item.path} component={item.component}/>
-            })}
-          </Switch>
-        </Content>
-      </Layout>
+      <Switch>
+        <Route path="/" component={NodeContent}/>
+        <Route path="/a" exact component={BlogContent}/>
+      </Switch>
     );
   }
 }
 
-export default Content;
+export default MainContent;

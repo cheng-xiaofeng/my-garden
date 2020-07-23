@@ -23,6 +23,18 @@ import UpdateVersion from './pages/node/UpdateVersion'
 import SemanticVersion from './pages/node/SemanticVersion'
 import UninstallPackage from './pages/node/UninstallPackage'
 import GlobalOrlocally from './pages/node/GlobalOrlocally'
+import Dependencies from './pages/node/Dependencies'
+import Npx from './pages/node/Npx'
+import EventLoop from './pages/node/EventLoop'
+import NextTick from './pages/node/NextTick'
+import SetImmediate from './pages/node/SetImmediate'
+import Timer from './pages/node/Timer'
+import CallbackFunction from './pages/node/CallbackFunction'
+import PromiseFunction from './pages/node/PromiseFunction'
+import AsyncFunction from './pages/node/AsyncFunction'
+import EventEmitter from './pages/node/EventEmitter'
+import BuildHttpServer from './pages/node/BuildHttpServer'
+import PerformHttpRequest from './pages/node/PerformHttpRequest'
 const routers = [{
   index: 1,
   name: 'node简介',
@@ -173,6 +185,186 @@ const routers = [{
   to: '/globalOrlocally',
   path: '/globalOrlocally',
   component: GlobalOrlocally
+}, {
+  index: 26,
+  name: '依赖与开发依赖',
+  to: '/dependencies',
+  path: '/dependencies',
+  component: Dependencies
+}, {
+  index: 27,
+  name: 'npx命令',
+  to: '/npx',
+  path: '/npx',
+  component: Npx
+}, {
+  index: 28,
+  name: '事件循环',
+  to: '/eventLoop',
+  path: '/eventLoop',
+  component: EventLoop
+}, {
+  index: 29,
+  name: '理解process.nextTick',
+  to: '/nextTick',
+  path: '/nextTick',
+  component: NextTick
+}, {
+  index: 30,
+  name: 'setImmediate',
+  to: '/setImmediate',
+  path: '/setImmediate',
+  component: SetImmediate
+}, {
+  index: 31,
+  name: '定时器',
+  to: '/timer',
+  path: '/timer',
+  component: Timer
+}, {
+  index: 32,
+  name: '异步编程与回调',
+  to: '/callback',
+  path: '/callback',
+  component: CallbackFunction
+}, {
+  index: 33,
+  name: 'promise',
+  to: '/promise',
+  path: '/promise',
+  component: PromiseFunction
+}, {
+  index: 34,
+  name: 'async await',
+  to: '/async',
+  path: '/async',
+  component: AsyncFunction
+}, {
+  index: 35,
+  name: '事件触发',
+  to: '/eventEmitter',
+  path: '/eventEmitter',
+  component: EventEmitter
+}, {
+  index: 36,
+  name: 'http服务',
+  to: '/httpServer',
+  path: '/httpServer',
+  component: BuildHttpServer
+}, {
+  index: 37,
+  name: 'http请求',
+  to: '/httpRequest',
+  path: '/httpRequest',
+  component: PerformHttpRequest
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
+}, {
+  index: ,
+  name: '',
+  to: '/',
+  path: '/',
+  component: 
 }, ]
 
 export {

@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { Layout, Menu   } from 'antd'
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 } from 'react-router-dom'
+import logo from '../logo.svg';
 const { Header } = Layout;
 class MainHeader extends Component {
   render() {
@@ -16,7 +14,7 @@ class MainHeader extends Component {
             <Link to={'/'}>node</Link>
           </Menu.Item>
           <Menu.Item key="2">
-            <Link to={'/a'}>node</Link>
+            <Link to={'/a'}>blog</Link>
           </Menu.Item>
         </Menu>
       </Header>
