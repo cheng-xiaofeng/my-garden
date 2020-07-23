@@ -18,7 +18,7 @@ class Index extends Component {
           </Header>
           <Layout style={{boxSizing: 'border-box', height: '100%', paddingTop: 64 }}>
             <Sider>
-              <Menu mode="vertical">
+              <Menu theme="dark" mode="vertical">
                 {routers.map(item => {
                   return (<Menu.Item key={item.index}>
                             <Link to={item.to}>{item.name}</Link>
