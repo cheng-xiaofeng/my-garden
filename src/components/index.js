@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { Layout, Menu   } from 'antd'
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
 } from 'react-router-dom'
 import MainHeader from './header'
 import Content from './content.js'
