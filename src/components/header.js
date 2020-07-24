@@ -14,7 +14,13 @@ class MainHeader extends Component {
             <Link to={'/'}>node</Link>
           </Menu.Item>
           <Menu.Item key="2">
-            <Link to={'/a'}>blog</Link>
+            <Link to={'/myblog'}>blog</Link>
+          </Menu.Item>
+          <Menu.Item key="3">
+            <Link to={'/mydreams'}>睡不着的胡思乱想</Link>
+          </Menu.Item>
+          <Menu.Item key="4">
+            <Link to={'/mydesign'}>我的渣ps技能</Link>
           </Menu.Item>
         </Menu>
       </Header>
