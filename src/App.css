@@ -1,7 +1,6 @@
 @import '~antd/dist/antd.css';
 @import './style/commonStyle.less';
 .App {
-  text-align: center;
   height: 100vh;
 }
 

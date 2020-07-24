@@ -10,7 +10,7 @@ const { Sider, Content } =  Layout
 class NodeContent extends Component {
   render() {
     return (
-      <Layout style={{boxSizing: 'border-box', height: '100%', paddingTop: 64 }}>
+      <Layout style={{boxSizing: 'border-box', height: '100%', paddingTop: 64, background: '#fff' }}>
         <Sider style={{height: '100%'}}>
           <Menu theme="dark" mode="vertical" style={{height: '100%', overflow: 'auto'}}>
             {routers.map(item => {
