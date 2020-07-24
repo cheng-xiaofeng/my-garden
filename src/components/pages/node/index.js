@@ -18,15 +18,16 @@ class NodeContent extends Component {
                         <Link to={item.to}>{item.name}</Link>
                       </Menu.Item>)
             })}
-              
           </Menu>
         </Sider>
         <Content>
-          <Switch>
-            {routers.map((item, index) => {
-              return <Route key={index} path={item.path} exact component={item.component}/>
-            })}
-          </Switch>
+          <div className={'mycontent'}>
+            <Switch>
+              {routers.map((item, index) => {
+                return <Route key={index} path={item.path} exact render={(props) => <item.component {...props}/>} />
+              })}
+            </Switch>
+          </div>
         </Content>
       </Layout>
     );
