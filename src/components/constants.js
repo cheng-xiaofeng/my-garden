@@ -1,28 +1,58 @@
-import Introduction from './pages/Introduction'
-import BriefHistory from './pages/BriefHistory'
-import InstallNode from './pages/InstallNode'
-import MuchJS from './pages/MuchJS'
-import TheDiffrences from './pages/TheDiffrences'
-import Engine from './pages/Engine'
-import RunNode from './pages/RunNode'
-import ExitNode from './pages/ExitNode'
-import ReadVariables from './pages/ReadVariables'
-import UseREPL from './pages/UseREPL'
-import CommandArguments from './pages/CommandArguments'
-import OutputInCommand from './OutputInCommand'
-import AcceptCommand from './pages/AcceptCommand'
-import ExportFunctionality from './pages/ExportFunctionality'
-import IntroductionOfNpm from './pages/IntroductionOfNpm'
-import WherePackages from './pages/WherePackages'
-import ExecutePackage from './pages/ExecutePackage'
-import PackageJson from './pages/PackageJson'
-import PackageLockJson from './pages/PackageLockJson'
-import FindVersion from './pages/FindVersion'
-import OldVersion from './pages/OldVersion'
-import UpdateVersion from './pages/UpdateVersion'
-import SemanticVersion from './pages/SemanticVersion'
-import UninstallPackage from './pages/UninstallPackage'
-import GlobalOrlocally from './pages/GlobalOrlocally'
+import Introduction from './pages/node/Introduction'
+import BriefHistory from './pages/node/BriefHistory'
+import InstallNode from './pages/node/InstallNode'
+import MuchJS from './pages/node/MuchJS'
+import TheDiffrences from './pages/node/TheDiffrences'
+import Engine from './pages/node/Engine'
+import RunNode from './pages/node/RunNode'
+import ExitNode from './pages/node/ExitNode'
+import ReadVariables from './pages/node/ReadVariables'
+import UseREPL from './pages/node/UseREPL'
+import CommandArguments from './pages/node/CommandArguments'
+import OutputInCommand from './pages/node/OutputInCommand'
+import AcceptCommand from './pages/node/AcceptCommand'
+import ExportFunctionality from './pages/node/ExportFunctionality'
+import IntroductionOfNpm from './pages/node/IntroductionOfNpm'
+import WherePackages from './pages/node/WherePackages'
+import ExecutePackage from './pages/node/ExecutePackage'
+import PackageJson from './pages/node/PackageJson'
+import PackageLockJson from './pages/node/PackageLockJson'
+import FindVersion from './pages/node/FindVersion'
+import OldVersion from './pages/node/OldVersion'
+import UpdateVersion from './pages/node/UpdateVersion'
+import SemanticVersion from './pages/node/SemanticVersion'
+import UninstallPackage from './pages/node/UninstallPackage'
+import GlobalOrlocally from './pages/node/GlobalOrlocally'
+import Dependencies from './pages/node/Dependencies'
+import Npx from './pages/node/Npx'
+import EventLoop from './pages/node/EventLoop'
+import NextTick from './pages/node/NextTick'
+import SetImmediate from './pages/node/SetImmediate'
+import Timer from './pages/node/Timer'
+import CallbackFunction from './pages/node/CallbackFunction'
+import PromiseFunction from './pages/node/PromiseFunction'
+import AsyncFunction from './pages/node/AsyncFunction'
+import EventEmitter from './pages/node/EventEmitter'
+import BuildHttpServer from './pages/node/BuildHttpServer'
+import PerformHttpRequest from './pages/node/PerformHttpRequest'
+import PerformPostRequest from './pages/node/PerformPostRequest'
+import RequestBody from './pages/node/RequestBody'
+import FileDescriptor from './pages/node/FileDescriptor'
+import FileStats from './pages/node/FileStats'
+import FilePath from './pages/node/FilePath'
+import ReadingFile from './pages/node/ReadingFile'
+import WritingFile from './pages/node/WritingFile'
+import WorkingFolder from './pages/node/WorkingFolder'
+import FsModule from './pages/node/FsModule'
+import PathModule from './pages/node/PathModule'
+import OSModule from './pages/node/OSModule'
+import EventsModule from './pages/node/EventsModule'
+import HttpModule from './pages/node/HttpModule'
+import BufferData from './pages/node/BufferData'
+import StreamData from './pages/node/StreamData'
+import EnvironmentDiffrence from './pages/node/EnvironmentDiffrence'
+import HandlingError from './pages/node/HandlingError'
+import LogObject from './pages/node/LogObject'
 const routers = [{
   index: 1,
   name: 'node简介',
@@ -173,6 +203,186 @@ const routers = [{
   to: '/globalOrlocally',
   path: '/globalOrlocally',
   component: GlobalOrlocally
+}, {
+  index: 26,
+  name: '依赖与开发依赖',
+  to: '/dependencies',
+  path: '/dependencies',
+  component: Dependencies
+}, {
+  index: 27,
+  name: 'npx命令',
+  to: '/npx',
+  path: '/npx',
+  component: Npx
+}, {
+  index: 28,
+  name: '事件循环',
+  to: '/eventLoop',
+  path: '/eventLoop',
+  component: EventLoop
+}, {
+  index: 29,
+  name: '理解process.nextTick',
+  to: '/nextTick',
+  path: '/nextTick',
+  component: NextTick
+}, {
+  index: 30,
+  name: 'setImmediate',
+  to: '/setImmediate',
+  path: '/setImmediate',
+  component: SetImmediate
+}, {
+  index: 31,
+  name: '定时器',
+  to: '/timer',
+  path: '/timer',
+  component: Timer
+}, {
+  index: 32,
+  name: '异步编程与回调',
+  to: '/callback',
+  path: '/callback',
+  component: CallbackFunction
+}, {
+  index: 33,
+  name: 'promise',
+  to: '/promise',
+  path: '/promise',
+  component: PromiseFunction
+}, {
+  index: 34,
+  name: 'async await',
+  to: '/async',
+  path: '/async',
+  component: AsyncFunction
+}, {
+  index: 35,
+  name: '事件触发',
+  to: '/eventEmitter',
+  path: '/eventEmitter',
+  component: EventEmitter
+}, {
+  index: 36,
+  name: 'http服务',
+  to: '/httpServer',
+  path: '/httpServer',
+  component: BuildHttpServer
+}, {
+  index: 37,
+  name: 'http请求',
+  to: '/httpRequest',
+  path: '/httpRequest',
+  component: PerformHttpRequest
+}, {
+  index: 38,
+  name: 'post请求',
+  to: '/postRequest',
+  path: '/postRequest',
+  component: PerformPostRequest
+}, {
+  index: 39,
+  name: 'request body',
+  to: '/requestBody',
+  path: '/requestBody',
+  component: RequestBody
+}, {
+  index: 40,
+  name: '文件描述符',
+  to: '/fileDescriptor',
+  path: '/fileDescriptor',
+  component: FileDescriptor
+}, {
+  index: 41,
+  name: 'stats',
+  to: '/stats',
+  path: '/stats',
+  component: FileStats
+}, {
+  index: 42,
+  name: '文件路径',
+  to: '/filePath',
+  path: '/filePath',
+  component: FilePath
+}, {
+  index: 43,
+  name: '读取文件',
+  to: '/readingFile',
+  path: '/readingFile',
+  component: ReadingFile
+}, {
+  index: 44,
+  name: '写入文件',
+  to: '/writingFile',
+  path: '/writingFile',
+  component: WritingFile
+}, {
+  index: 45,
+  name: '操作文件夹',
+  to: '/folder',
+  path: '/folder',
+  component: WorkingFolder
+}, {
+  index: 46,
+  name: 'fs模块',
+  to: '/fsModule',
+  path: '/fsModule',
+  component: FsModule
+}, {
+  index: 47,
+  name: 'path模块',
+  to: '/pathModule',
+  path: '/pathModule',
+  component: PathModule
+}, {
+  index: 48,
+  name: 'os模块',
+  to: '/osModule',
+  path: '/osModule',
+  component: OSModule
+}, {
+  index: 49,
+  name: 'events模块',
+  to: '/eventsModule',
+  path: '/eventsModule',
+  component: EventsModule
+}, {
+  index: 50,
+  name: 'http模块',
+  to: '/httpModule',
+  path: '/httpModule',
+  component: HttpModule
+}, {
+  index: 51,
+  name: 'buffer',
+  to: '/buffer',
+  path: '/buffer',
+  component: BufferData
+}, {
+  index: 52,
+  name: 'stream',
+  to: '/stream',
+  path: '/stream',
+  component: StreamData
+}, {
+  index: 53,
+  name: '开发与生产环境',
+  to: '/environmentDiffrence',
+  path: '/environmentDiffrence',
+  component: EnvironmentDiffrence
+}, {
+  index: 54,
+  name: '错误处理',
+  to: '/errorHandling',
+  path: '/errorHandling',
+  component: HandlingError
+}, {
+  index: 55,
+  name: 'log',
+  to: '/logObject',
+  path: '/logObject',
+  component: LogObject
 }, ]
 
 export {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class BriefHistory extends Component {
+class PerformHttpRequest extends Component {
   render() {
     return (
       <div>
@@ -10,4 +10,4 @@ class BriefHistory extends Component {
   }
 }
 
-export default BriefHistory;
+export default PerformHttpRequest;
