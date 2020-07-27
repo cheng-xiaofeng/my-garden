@@ -1,5 +1,6 @@
 @import '~antd/dist/antd.css';
 @import './style/commonStyle.less';
+@import './style/myAntd.less';
 .App {
   height: 100vh;
 }

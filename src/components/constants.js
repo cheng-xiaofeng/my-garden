@@ -56,8 +56,8 @@ import LogObject from './pages/node/LogObject'
 const routers = [{
   index: 1,
   name: 'node简介',
-  to: '/',
-  path: '/',
+  to: '/node',
+  path: '/node',
   component: Introduction
 }, {
   index: 2,

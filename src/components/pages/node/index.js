@@ -10,7 +10,7 @@ const { Sider, Content } =  Layout
 class NodeContent extends Component {
   render() {
     return (
-      <Layout style={{boxSizing: 'border-box', height: '100%', paddingTop: 64, background: '#fff' }}>
+      <Layout className='commonHeader'>
         <Sider style={{height: '100%'}}>
           <Menu theme="dark" mode="vertical" style={{height: '100%', overflow: 'auto'}}>
             {routers.map(item => {
@@ -21,7 +21,7 @@ class NodeContent extends Component {
           </Menu>
         </Sider>
         <Content>
-          <div className={'mycontent'}>
+          <div className='mycontent'>
             <Switch>
               {routers.map((item, index) => {
                 return <Route key={index} path={item.path} exact render={(props) => <item.component {...props}/>} />

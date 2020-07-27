@@ -11,7 +11,7 @@ class MainHeader extends Component {
       <Header style={{ position: 'fixed', zIndex: 1, width: '100%', color: '#fff'}}>
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
           <Menu.Item key="1">
-            <Link to={'/'}>node</Link>
+            <Link to={'/node'}>node</Link>
           </Menu.Item>
           <Menu.Item key="2">
             <Link to={'/myblog'}>blog</Link>
