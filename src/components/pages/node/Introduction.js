@@ -8,10 +8,27 @@ import {
   MethodKeyWord,
   NormalString,
   SpecialForm,
-  StatusNumber
+  StatusNumber,
+  CodeEditor
 } from '../../commonComponents'
+import { liContent } from '../../constants'
 export default class Introduction extends Component {
+
   render() {
+    const httpContent = `const http = require('http')
+const hostname = '127.0.0.1'
+const port = process.env.PORT
+const server = http.createServer((req, res) =>
+    res.statusCode = 200
+    res.setHeader('Content-Type', 'text/plain')
+    res.end('Hello World!')
+}})
+server.listen(port, hostname, () => {
+    console.log('Server running at http://\${hostname\}:\${port}')
+})`
+  const statusContent = 'res.statusCode = 200'
+  const headerContent = `res.setHeader('Content-Type', 'text/plain')`
+  const resContent = "res.end('Hello World')"
     return (
       <div>
         <h1 className='article-reader__headline'>node简介</h1>
@@ -49,7 +66,8 @@ export default class Introduction extends Component {
           </p>
           <h2>一个简单的node.js应用程序</h2>
           <p>最常见的node.js的例子: Hello World,是一个web服务器,如下:</p>
-          <div className="codeExample">
+          <CodeEditor codeContent={httpContent} height="300px"/>
+          {/*<div className="codeExample">
             <p>
               <DeclarationConst /> <span>http = </span><Keyword words="require" />(<NormalString words="http"/>)
             </p>
@@ -69,7 +87,7 @@ export default class Introduction extends Component {
                   <p className="mainCode"><span>{`console.log(Server running at http://`}</span><SpecialForm words="hostname"/><span>:</span><SpecialForm words="port"/><span>)</span></p>
                 <p>{'})'}</p>
             </code>
-          </div>
+            </div>*/}
           <p>这段代码首先包含了node.js的<a href="https://nodejs.org/api/http.html">http模块</a></p>
           <p>node.js拥有非常优秀的<a href="https://nodejs.org/api/">标准库</a>,包括一流的网络支持</p>
           <p>http的createServer()方法新建了一个http服务并返回了它</p>
@@ -83,42 +101,28 @@ export default class Introduction extends Component {
           <p>第一个参数是请求的详细信息,在这个例子里,并没有使用,但你可以访问请求头和请求数据</p>
           <p>第二个参数返回数据给回调函数</p>
           <p>在这里是:</p>
-          <div className="codeExample">
+          <CodeEditor codeContent={statusContent} height="40px"/>
+          {/*<div className="codeExample">
             res.<MethodKeyWord words="statusCode"/> = <StatusNumber words="200"/>
-          </div>
+          </div>*/}
           <p>我们把statusCode属性设置为200, 代表响应成功</p>
           <p>设置Content-Type header</p>
-          <div className="codeExample">
+          <CodeEditor codeContent={headerContent} height="40px"/>
+          {/*<div className="codeExample">
             res.<MethodKeyWord words="setHeader"/>(<NormalString words="Content-Type"/>, <NormalString words="text/plain"/>)
-          </div>
+          </div>*/}
           <p>然后关闭响应,设置返回内容给end方法:</p>
-          <div className="codeExample">
+          <CodeEditor codeContent={resContent} height="40px"/>
+          {/*<div className="codeExample">
             res.<MethodKeyWord words="end"/>(<NormalString words="'Hello World\n'"/>)
-          </div>
+        </div>*/}
           <h2>node.js框架和工具</h2>
           <p>node.js是一个轻量级的平台,社区创建了很多很多库,来提高开发效率和乐趣</p>
           <p>许多已建立好的库都很受欢迎,这里列举的一些库值得亲们学习:</p>
           <ul>
-            <li>
-              <a href="https://adonisjs.com/">AdonisJs</a>:一个全栈框架,高度专注于开发者人体工程学,稳定性和信任性(这三个词为直译),最快的
-              node.js框架之一
-            </li>
-            <li>
-              <a href="https://expressjs.com/">express</a>:提供了最简单且很有效的方法来建立web服务,
-              简单,灵活专注属于服务的核心特点是它成功的关键
-            </li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            AdonisJs: A full-stack framework highly focused on developer ergonomics,
-            stability, and confidence. Adonis is one of the fastest Node.js web frameworks.
+            {liContent.map(item => {
+              return <li><a href={item.href}>{item.name}</a>{item.description}</li>
+            })}
           </ul>
         </div>
       </div>
