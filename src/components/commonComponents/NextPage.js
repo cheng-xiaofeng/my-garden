@@ -7,9 +7,11 @@ import {
 class NextPage extends Component {
   render() {
     return (
-      <Router>
-        <Link to={this.props.url}>下一页</Link>
-      </Router>
+      <span className="nextPage">
+        <Router>
+          <Link to={this.props.url}>下一页</Link>
+        </Router>
+      </span>
     );
   }
 }

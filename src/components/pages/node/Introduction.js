@@ -1,14 +1,7 @@
 import React, { Component } from 'react'
 import { 
-  DeclarationConst,
-  DeclarationLet,
   ForwardPages,
-  Keyword,
   NextPage,
-  MethodKeyWord,
-  NormalString,
-  SpecialForm,
-  StatusNumber,
   CodeEditor
 } from '../../commonComponents'
 import { liContent } from '../../constants'
@@ -125,7 +118,8 @@ server.listen(port, hostname, () => {
             })}
           </ul>
         </div>
-      </div>
+        <NextPage url="/briefHistory"/>
+        </div>
     )
   }
 }
