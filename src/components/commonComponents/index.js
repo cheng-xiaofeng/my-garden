@@ -6,6 +6,7 @@ import NormalString from "./NormalString"
 import MethodKeyWord  from "./MethodKeyWord"
 import SpecialForm from './SpecialForm'
 import StatusNumber from './StatusNumber'
+import CodeEditor from './CodeEditor'
 export {
   DeclarationConst,
   DeclarationLet,
@@ -15,5 +16,6 @@ export {
   NormalString,
   MethodKeyWord,
   SpecialForm,
-  StatusNumber
+  StatusNumber,
+  CodeEditor
 }
