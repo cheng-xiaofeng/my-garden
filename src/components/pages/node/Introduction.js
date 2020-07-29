@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { 
-  ForwardPages,
   NextPage,
   CodeEditor
 } from '../../commonComponents'
@@ -113,13 +112,15 @@ server.listen(port, hostname, () => {
           <p>node.js是一个轻量级的平台,社区创建了很多很多库,来提高开发效率和乐趣</p>
           <p>许多已建立好的库都很受欢迎,这里列举的一些库值得亲们学习:</p>
           <ul>
-            {liContent.map(item => {
-              return <li><a href={item.href}>{item.name}</a>{item.description}</li>
+            {liContent.map((item, index) => {
+              return <li key={index}><a href={item.href}>{item.name}</a>{item.description}</li>
             })}
           </ul>
         </div>
-        <NextPage url="/briefHistory"/>
+        <div className="clickPage">
+          <NextPage url="/briefHistory"/>
         </div>
+      </div>
     )
   }
 }

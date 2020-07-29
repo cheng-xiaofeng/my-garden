@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-javascript";
 import "ace-builds/src-noconflict/theme-monokai";
+import ace from "ace-builds";
+
+ace.config.set('basePath', '/assets/javascripts/ace-builds')
 class CodeEditor extends Component {
   render() {
     return (

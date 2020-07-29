@@ -7,11 +7,11 @@ import {
 class ForwardPage extends Component {
   render() {
     return (
-      <div>
+      <span>
         <Router>
           <Link to={this.props.url}>上一页</Link>
         </Router>
-      </div>
+      </span>
     );
   }
 }
