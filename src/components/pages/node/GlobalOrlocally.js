@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-
+import { 
+  ForwardPages,
+  NextPage,
+  CodeEditor
+} from '../../commonComponents'
 class GlobalOrlocally extends Component {
   render() {
     return (
