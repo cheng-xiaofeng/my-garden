@@ -1,9 +1,11 @@
 const CHANGEPAGE = 'CHANGEPAGE'
 
-export function changeName(data) {
+export function changePage(itemKey) {
   return dispatch => (
     dispatch({
     type: CHANGEPAGE,
-    payload:data
+    payload:{
+      itemKey
+    }
   }))
 } 

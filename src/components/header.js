@@ -3,14 +3,20 @@ import { Layout, Menu } from 'antd'
 import {
   Link
 } from 'react-router-dom'
+import { connect } from 'react-redux'
 import logo from '../logo.svg';
+import { changePage } from '../store/actions/changePageAction'
 const { Header } = Layout;
+@connect()
 class MainHeader extends Component {
+  clickNode = () => {
+    this.props.dispatch(changePage(['1']))
+  }
   render() {
     return (
       <Header style={{ position: 'fixed', zIndex: 1, width: '100%', color: '#fff'}}>
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
-          <Menu.Item key="1">
+          <Menu.Item key="1" onClick={this.clickNode}>
             <Link to={'/node'}>node</Link>
           </Menu.Item>
           <Menu.Item key="2">

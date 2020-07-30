@@ -3,7 +3,7 @@ import changePageReducer from './changePageReducer'
 
 
 const reducers = combineReducers({
-  changePageReducer
+  ...changePageReducer
 })
 
 export default reducers

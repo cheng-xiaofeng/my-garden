@@ -7,30 +7,26 @@ import {
 import { connect } from 'react-redux'
 import { Layout, Menu   } from 'antd'
 import { routers } from '../../constants'
+import { changePage } from '../../../store/actions/changePageAction'
 
 const { Sider, Content } =  Layout
 @connect(state => {
   return {
-    key: state.changePageReducer.key
+    itemKey: state.changePageReducer.itemKey
   }
 })
 class NodeContent extends Component {
-  
   chooseItem =(key) => {
-    this.setState({
-      selectedKeys: [key]
-    })
+    this.props.dispatch(changePage([key]))
   }
   clickItem = ({item, key}) => {
-    this.setState({
-      selectedKeys: [key]
-    })
+    this.props.dispatch(changePage([key]))
   }
   render() {
     return (
       <Layout className='commonHeader'>
         <Sider style={{height: '100%'}}>
-          <Menu onClick={this.clickItem} selectable={true} selectedKeys={this.props.key} theme="dark" mode="vertical" style={{height: '100%', overflow: 'auto'}}>
+          <Menu onClick={this.clickItem} selectable={true} selectedKeys={this.props.itemKey} theme="dark" mode="vertical" style={{height: '100%', overflow: 'auto'}}>
             {routers.map(item => {
               return (<Menu.Item key={item.index}>
                         <Link to={item.to}>{item.name}</Link>
