@@ -1,17 +1,14 @@
 import { combineReducers } from 'redux'
-
-function getName(state={name: 'jeckie'}, action) {
+function changePageReducer(state={key: '1'}, action) {
   switch (action.type) {
-    case 'CHANGENAME':
+    case 'CHANGEPAGE':
       return {...state, ...action.payload}
     default:
       return {...state}
       break;
   }
 }
-
 const reducers = combineReducers({
-  getName
+  changePageReducer
 })
-
 export default reducers

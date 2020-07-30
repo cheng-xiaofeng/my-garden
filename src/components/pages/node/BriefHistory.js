@@ -73,11 +73,11 @@ class BriefHistory extends Component {
             <li>node.js 4 发布(1, 2, 3没有预先发布过)</li>
           </ul>
           <h2>2016</h2>
-          <ui>
+          <ul>
             <li>leftpad incident(不知道什么东西)</li>
             <li><a href="https://classic.yarnpkg.com/en/">yarn</a>诞生</li>
             <li>node.js 6 发布</li>
-          </ui>
+          </ul>
           <h2>2017</h2>
           <ul>
             <li>npm更多的专注于安全方面</li>
@@ -93,8 +93,8 @@ class BriefHistory extends Component {
           </ul>
         </div>
         <div className="clickPage">
-          <ForwardPages url="/node"/>
-          <NextPage url="/node/installNode"/>
+          <ForwardPages url="/node" chooseItem={() => this.props.chooseItem('1')}/>
+          <NextPage url="/node/installNode" chooseItem={() => this.props.chooseItem('3')}/>
         </div>
       </div>
     );

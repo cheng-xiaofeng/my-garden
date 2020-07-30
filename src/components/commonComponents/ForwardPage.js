@@ -5,13 +5,14 @@ import {
   Link
 } from 'react-router-dom'
 class ForwardPage extends Component {
+  clickPage = () => {
+    this.props.chooseItem()
+  }
   render() {
     return (
-      <span>
-        <Router>
-          <Link to={this.props.url}>上一页</Link>
-        </Router>
-      </span>
+      <div onClick={this.clickPage}>
+        <Link to={this.props.url}>上一页</Link>
+      </div>
     );
   }
 }

@@ -16,7 +16,7 @@ const server = http.createServer((req, res) =>
     res.end('Hello World!')
 }})
 server.listen(port, hostname, () => {
-    console.log('Server running at http://\${hostname\}:\${port}')
+    console.log('Server running at http://\${hostname}:\${port}')
 })`
   const statusContent = 'res.statusCode = 200'
   const headerContent = `res.setHeader('Content-Type', 'text/plain')`
@@ -118,7 +118,7 @@ server.listen(port, hostname, () => {
           </ul>
         </div>
         <div className="clickPage">
-          <NextPage url="/briefHistory"/>
+          <NextPage url="/node/briefHistory" chooseItem={() => this.props.chooseItem('2')}/>
         </div>
       </div>
     )

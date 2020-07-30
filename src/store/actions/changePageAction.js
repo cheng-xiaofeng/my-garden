@@ -1,10 +1,9 @@
-const CHANGENAME = 'CHANGENAME'
+const CHANGEPAGE = 'CHANGEPAGE'
 
 export function changeName(data) {
-  console.log(333);
   return dispatch => (
     dispatch({
-    type: CHANGENAME,
+    type: CHANGEPAGE,
     payload:data
   }))
 } 
