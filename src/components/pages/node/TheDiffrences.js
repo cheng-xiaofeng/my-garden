@@ -40,6 +40,15 @@ export default class TheDiffrences extends Component {
           <p>放到浏览器之前,你可以使用babel把代码转换成兼容es5的代码,node.js中你就不用这么做</p>
           <p>另一个不同就是node.js使用CommonJS模块系统,而浏览器,我们是用es模块标准</p>
           <p>这也就是说,暂时你将在node.js中使用require(),浏览器中使用import</p>
+          <h2>编译</h2>
+          <p>通常JavaScript被当成是解释性语言,但现在的js引擎不解释而是编译</p>
+          <p>2009年开始,当SpiderMonkey编译器加入到火狐3.5之后,所有的人都跟着这样做了</p>
+          <p>js被v8即时编译并加速执行</p>
+          <p>这好像违反常理,但在2004年谷歌地图问世后,js已经从只能执行几十行代码的语言变成
+          几千到几十万行代码,运行在浏览器中的执行程序
+          </p>
+          <p>现在,执行程序可以在浏览器中运行几个小时,而不仅仅只是一些表单验证和简单的脚本</p>
+          <p>在这样的情况下,编译js更合理一些,虽然准备的时间有点长,但是一旦完成可比单纯的只解释代码,性能高多了</p>
         </div>
         <div className="clickPage">
           <ForwardPages url="" chooseItem={() => this.props.chooseItem('4')}/>
