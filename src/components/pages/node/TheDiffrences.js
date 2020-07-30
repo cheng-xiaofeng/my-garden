@@ -5,6 +5,11 @@ import {
   CodeEditor
 } from '../../commonComponents'
 export default class TheDiffrences extends Component {
+  
+  componentDidMount() {
+    this.props.chooseItem('5')
+  }
+  
   render() {
     return (
       <div>

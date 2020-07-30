@@ -5,6 +5,9 @@ import {
   CodeEditor
 } from '../../commonComponents'
 export default class MuchJS extends Component {
+  componentDidMount() {
+    this.props.chooseItem('4')
+  }
   render() {
     return (
       <div>

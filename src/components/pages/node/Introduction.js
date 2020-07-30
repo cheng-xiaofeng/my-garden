@@ -5,7 +5,9 @@ import {
 } from '../../commonComponents'
 import { liContent } from '../../constants'
 export default class Introduction extends Component {
-
+  componentDidMount() {
+    this.props.chooseItem('1')
+  }
   render() {
     const httpContent = `const http = require('http')
 const hostname = '127.0.0.1'

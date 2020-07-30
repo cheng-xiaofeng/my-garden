@@ -4,6 +4,9 @@ import {
   NextPage,
 } from '../../commonComponents'
 class BriefHistory extends Component {
+  componentDidMount() {
+    this.props.chooseItem('2')
+  }
   render() {
     return (
       <div>

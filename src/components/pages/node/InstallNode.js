@@ -5,6 +5,9 @@ import {
   CodeEditor
 } from '../../commonComponents'
 class InstallNode extends Component {
+  componentDidMount() {
+    this.props.chooseItem('3')
+  }
   render() {
     return (
       <div>
