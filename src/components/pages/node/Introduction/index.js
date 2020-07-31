@@ -2,27 +2,19 @@ import React, { Component } from 'react'
 import { 
   NextPage,
   CodeEditor
-} from '../../commonComponents'
-import { liContent } from '../../constants'
+} from '../../../commonComponents'
+import {
+  httpContent,
+  statusContent,
+  headerContent,
+  resContent,
+  liContent
+} from './constants'
 export default class Introduction extends Component {
   componentDidMount() {
     this.props.chooseItem('1')
   }
   render() {
-    const httpContent = `const http = require('http')
-const hostname = '127.0.0.1'
-const port = process.env.PORT
-const server = http.createServer((req, res) =>
-    res.statusCode = 200
-    res.setHeader('Content-Type', 'text/plain')
-    res.end('Hello World!')
-}})
-server.listen(port, hostname, () => {
-    console.log('Server running at http://\${hostname}:\${port}')
-})`
-  const statusContent = 'res.statusCode = 200'
-  const headerContent = `res.setHeader('Content-Type', 'text/plain')`
-  const resContent = "res.end('Hello World')"
     return (
       <div>
         <h1 className='article-reader__headline'>node简介</h1>
