@@ -35,6 +35,16 @@ class UseREPL extends Component {
           <p>REPL等着我们输入js代码,更精准一点的</p>
           <p>输入一下代码,按enter:</p>
           <CodeEditor codeContent={logREPL} height="100px"/>
+          <p>test使我们告诉控制台要输出的</p>
+          <p>现在输入新的js:</p>
+          <h2>使用tab键自动补全</h2>
+          <p>REPL的优点就是它的交互性</p>
+          <p>当你写代码的时候,按下tab键,REPL会基于你已经定义的变量或预定义的变量来补全代码</p>
+          <h2>探索js对象</h2>
+          <p>试着输入js对象,比如Number,加一个.然后按tab</p>
+          <p>REPL会打印出你可以访问的所有属性和方法:</p>
+          <img style={{display: 'block',width: 500,height: 500}} src="../../../../../public/images/classNumber.png" alt=""/>
+          <CodeEditor codeContent={showArray} height="40px"/>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/readVariables" chooseItem={() => this.props.chooseItem('9')}/>

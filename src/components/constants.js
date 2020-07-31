@@ -104,7 +104,7 @@ const routers = [{
 }, {
   index: '9',
   name: '读取环境变量',
-  to: '/node/readVariables ',
+  to: '/node/readVariables',
   path: '/node/readVariables',
   component: ReadVariables
 }, {
