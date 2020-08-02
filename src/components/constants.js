@@ -8,11 +8,11 @@ import RunNode from './pages/node/RunNode'
 import ExitNode from './pages/node/ExitNode/'
 import ReadVariables from './pages/node/ReadVariables'
 import UseREPL from './pages/node/UseREPL/'
-import CommandArguments from './pages/node/CommandArguments'
-import OutputInCommand from './pages/node/OutputInCommand'
-import AcceptCommand from './pages/node/AcceptCommand'
-import ExportFunctionality from './pages/node/ExportFunctionality'
-import IntroductionOfNpm from './pages/node/IntroductionOfNpm'
+import CommandArguments from './pages/node/CommandArguments/'
+import OutputInCommand from './pages/node/OutputInCommand/'
+import AcceptCommand from './pages/node/AcceptCommand/'
+import ExportFunctionality from './pages/node/ExportFunctionality/'
+import IntroductionOfNpm from './pages/node/IntroductionOfNpm/'
 import WherePackages from './pages/node/WherePackages'
 import ExecutePackage from './pages/node/ExecutePackage'
 import PackageJson from './pages/node/PackageJson'
@@ -133,7 +133,7 @@ const routers = [{
   component: AcceptCommand
 }, {
   index: '14',
-  name: '输出功能模块',
+  name: '抛出功能',
   to: '/node/exportFunctionality',
   path: '/node/exportFunctionality',
   component: ExportFunctionality 
