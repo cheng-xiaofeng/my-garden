@@ -12,6 +12,8 @@ import {
   showArray,
   showNum
 } from './constants'
+import classNumber from '../../../../images/classNumber.png'
+import globalObj from "../../../../images/globalObj.png"
 class UseREPL extends Component {
   componentDidMount() {
     this.props.chooseItem('10')
@@ -43,10 +45,10 @@ class UseREPL extends Component {
           <h2>探索js对象</h2>
           <p>试着输入js对象,比如Number,加一个.然后按tab</p>
           <p>REPL会打印出你可以访问的所有属性和方法:</p>
-          <img style={{display: 'block',width: 500,height: 500}} src="../../../../../static/images/classNumber.png" alt=""/>
+          <img style={{display: 'block',width: 800,height: 350}} src={classNumber} alt=""/>
           <h2>全局对象</h2>
           <p>输入global.,按下tab,你就可以查看全局对象:</p>
-          <img style={{display: 'block',width: 500,height: 500}} src="../../../../../static/images/globalObj.png" alt=""/>
+          <img style={{display: 'block',width: 800,height: 500}} src={globalObj} alt=""/>
           <h2>特殊变量 _</h2>
           <p>你写了一些代码后,输入_,将会打出最后操作的结果</p>
           <h2>.命令</h2>
@@ -65,8 +67,6 @@ class UseREPL extends Component {
           <p>按下enter,REPL会以...开启新的一行,表示你可以继续输入</p>
           <CodeEditor codeContent={showNum} height="80px"/>
           <p>如果你在末尾输入.break命令,多行模式就会停止,语句也不会执行</p>
-          If you type .break at the end of a line, 
-          the multiline mode will stop and the statement will not be executed.
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/readVariables" chooseItem={() => this.props.chooseItem('9')}/>
