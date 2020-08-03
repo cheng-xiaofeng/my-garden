@@ -125,9 +125,52 @@ class PackageJson extends Component {
           <p>这些是命令行程序,用npm run xxx或yarn xxx启动,xxx是命令名称.比如: npm run dev</p>
           <p>你也可以自定义名称,scripts可以做任何你想做的事</p>
           <h2>dependencies</h2>
-          <p>罗列出npm下载的包作为依赖</p>
+          <p>罗列出依赖的包</p>
           <p>下载包用npm或者yarn</p>
           <CodeEditor codeContent={codeAll.code23} height="60px"/>
+          <p>包会自动插入到这个列表</p>
+          <p>比如:</p>
+          <CodeEditor codeContent={codeAll.code24} height="60px"/>
+          <h2>devDependencies</h2>
+          <p>罗列出开发依赖的包</p>
+          <p>跟dependencies的区别是他们只在开发环境,不需要在生产环境</p>
+          <p>下载包用npm或者yarn</p>
+          <CodeEditor codeContent={codeAll.code25} height="60px"/>
+          <p>包会自动插入到这个列表</p>
+          <p>比如:</p>
+          <CodeEditor codeContent={codeAll.code26} height="80px"/>
+          <h2>engines</h2>
+          <p>设置这个package/app运行在哪个版本的node</p>
+          <p>例如:</p>
+          <CodeEditor codeContent={codeAll.code27} height="130px"/>
+          <h2>browserslist</h2>
+          <p>说明你想支持的浏览器和版本,被Babel, Autoprefixer和其他工具引用,给浏览器添加所需的回调等东西</p>
+          <p>例如:</p>
+          <CodeEditor codeContent={codeAll.code28} height="130px"/>
+          <p>这个配置说明你想支持至少1%使用率(<a href="https://caniuse.com/">CanIUse.com</a>)的所有浏览器最新的两个版本,除了IE8及以下</p>
+          <a href="https://www.npmjs.com/package/browserslist">(查看更多)</a>
+          <h2>Command-specific properties</h2>
+          <p>package.json文件也能持有特定命令配置,比如Babel, ESLint等</p>
+          <p>每个都有一个特定属性,像eslintConfig, babel.这些都是特定命令,你可以在各自的command/project文件中找到他们的用法</p>  
+          <h2>包的版本</h2>
+          <p>在上面你见过版本数字了:~3.0.0 或 ^0.13.0. 它们是什么意思,你将使用其他的哪个版本标识符?</p>
+          <p>标识符来自dependency,更新包的时候用的</p>
+          <p>语义化版本号有三个数字,第一个代表主版本号,第二个代表次版本号,第三个代表修订号,遵循以下规则:</p>
+          <ul>
+            <li>~: ~0.13.3,你只想升级修订号版本,0.13.1可以,0.14.0不行</li>
+            <li>^: ^0.13.0,你想升级修订号版本和次版本,0.13.1和0.14.0均可</li>
+            <li>*: *, 更新所有包括主版本</li>
+            <li>&gt;: 接受任何大于指定版本号的版本</li>
+            <li>&gt;=: 接受任何大于等于指定版本号的版本</li>
+            <li>&lt;=: 接受任何小于等于指定版本号的版本</li>
+            <li>&lt;: 接受任何小于指定版本号的版本</li>
+          </ul>
+          <p>还有其他规则: </p>
+          <ul>
+            <li>没有标识: 只接受指定版本</li>
+            <li>最新: 想使用最新版本</li>
+          </ul>
+          <p>可以组合使用标识符, 1.0.0 || &gt;=1.1.0 &lt;1.2.0,  就是要么是用1.0.1或者1.1.0以上1.2.0以下</p>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/ExecutePackage/" chooseItem={() => this.props.chooseItem('17')}/>
