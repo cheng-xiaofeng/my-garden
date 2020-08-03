@@ -30,7 +30,7 @@ class PackageJson extends Component {
           <CodeEditor codeContent={codeAll.code2} height="80px"/>
           <p>它定义了一个name属性,代表程序或者包的名字,在此文件的同级文件夹下</p>
           <p>下面是个更复杂的例子,是从vue程序总抽取出来的:</p>
-          <CodeEditor codeContent={codeAll.code3} height="1900px"/>
+          <CodeEditor codeContent={codeAll.code3} height="1950px"/>
           <p>这里包含很多东西:</p>
           <ul>
             <li>name设置程序/包的名字</li>
@@ -46,19 +46,88 @@ class PackageJson extends Component {
           </ul>
           <p>所有属性都会被npm或者我们使用的其他工具所用</p>
           <h2>属性分解说明</h2>
-          <p></p>
-          <p></p>
-
-This section describes the properties you can use in detail. We refer to "package" 
-but the same thing applies to local applications which you do not use as packages.
-
-Most of those properties are only used on https://www.npmjs.com/, others by scripts 
-that interact with your code, like npm or others.
-
-name
-Sets the package name.
-
-Example:
+          <p>这块区域描述的是你能使用的属性的细节.我们说是"package",其实也适用本地程序中不叫package
+          但其同样作用的东西</p>
+          <p>许多属性只用在<a href="https://www.npmjs.com/">这里</a>,其他的会和你的代码交互,比如npm</p>
+          <h2>name</h2>
+          <p>设置包的名称</p>
+          <p>例如:</p>
+          <CodeEditor codeContent={codeAll.code4} height="40px"/>
+          <p>name必须少于214个字母,不能有空格,只能包含小写字母,-或者_</p>
+          <p>这是因为包要发布到npm上,会根据这个属性生成它的URL</p>
+          <p>如果你在github上发布这个包,那GitHub的仓库名是个很好的选择</p>
+          <h2>author</h2>
+          <p>列出包的作者名字</p>
+          <p>比如:</p>
+          <CodeEditor codeContent={codeAll.code5} height="80px"/>
+          <p>或者这种格式:</p>
+          <CodeEditor codeContent={codeAll.code6} height="190px"/>
+          <h2>贡献者</h2>
+          <p>跟author一样,这个项目可以有一个或者多个贡献者,是个数组</p>
+          <p>例如:</p>
+          <CodeEditor codeContent={codeAll.code7} height="100px"/>
+          <p>也可以这样:</p>
+          <CodeEditor codeContent={codeAll.code8} height="240px"/>
+          <h2>bugs</h2>
+          <p>链接到包的问题追踪系统,像GitHub的问题页面</p>
+          <p>例子:</p>
+          <CodeEditor codeContent={codeAll.code9} height="80px"/>
+          <h2>homepage</h2>
+          <p>设置包的主页</p>
+          <p>例子:</p>
+          <CodeEditor codeContent={codeAll.code10} height="80px"/>
+          <h2>版本</h2>
+          <p>表示当前包的版本</p>
+          <p>例子:</p>
+          <CodeEditor codeContent={codeAll.code11} height="40px"/>
+          <p>这个属性后面跟的是语义化版本符号,也就是说这个版本总是有三个数字组成:x.x.x</p>
+          <p>第一个数字是主版本,第二个是次版本号,第三个是修订号</p>
+          <p>这些数字的意义是: 修复bug用修订号;向后兼容用次版本号;有重大改变用主版本号</p>
+          <h2>license</h2>
+          <p>表示包的证书</p>
+          <p>例子:</p>
+          <CodeEditor codeContent={codeAll.code12} height="40px"/>
+          <h2>keywords</h2>
+          <p>这个属性是个关键字数组,表示你的包能做什么</p>
+          <p>例子:</p>
+          <CodeEditor codeContent={codeAll.code13} height="140px"/>
+          <p>这可以帮助人们在<a href="https://www.npmjs.com/">这里</a>找到相似的包</p>
+          <h2>description</h2>
+          <p>这个属性是包的简述</p>
+          <p>例子:</p>
+          <CodeEditor codeContent={codeAll.code14} height="40px"/>
+          <p>如果你想吧包发布到npm,这个属性就会很有用,人们会知道这个包是关于什么的</p>
+          <h2>repository</h2>
+          <p>这个属性表示这个包的仓库在哪</p>
+          <p>例子:</p>
+          <CodeEditor codeContent={codeAll.code15} height="40px"/>
+          <p>注意gitHub前缀,还有其他的一些前缀</p>
+          Notice the github prefix. There are other popular services baked in:
+          <CodeEditor codeContent={codeAll.code16} height="40px"/>
+          <CodeEditor codeContent={codeAll.code17} height="40px"/>
+          <p>你可以很明确的设置版本控制系统:</p>
+          <CodeEditor codeContent={codeAll.code18} height="110px"/>
+          <p>也可以使用不同的版本控制系统:</p>
+          <CodeEditor codeContent={codeAll.code19} height="110px"/>
+          <h2>main</h2>
+          <p>设置包的入口文件</p>
+          <p>当你引入这个包的时候,程序就在这儿开始搜索抛出的模块</p>
+          <p>例如:</p>
+          <CodeEditor codeContent={codeAll.code20} height="40px"/>
+          <h2>private</h2>
+          <p>如果设为true,可以防止包意外发布到npm</p>
+          <p>例子:</p>
+          <CodeEditor codeContent={codeAll.code21} height="40px"/>
+          <h2>scripts</h2>
+          <p>定义可以运行的node脚本</p>
+          <p>例子:</p>
+          <CodeEditor codeContent={codeAll.code22} height="240px"/>
+          <p>这些是命令行程序,用npm run xxx或yarn xxx启动,xxx是命令名称.比如: npm run dev</p>
+          <p>你也可以自定义名称,scripts可以做任何你想做的事</p>
+          <h2>dependencies</h2>
+          <p>罗列出npm下载的包作为依赖</p>
+          <p>下载包用npm或者yarn</p>
+          <CodeEditor codeContent={codeAll.code23} height="60px"/>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/ExecutePackage/" chooseItem={() => this.props.chooseItem('17')}/>
