@@ -38,8 +38,14 @@ class EventLoop extends Component {
           </p>
           <p>js中的I/O都是非阻塞的.网络请求,文件操作等.阻塞是特例,这也是为什么js基于如此多的回调,promise和async/await</p>
           <h2>回调栈</h2>
-          
-        <CodeEditor codeContent={code4} height="60px"/>
+          <p>调用栈是一个LIFO对列(后进先出)</p>
+          <p>事件循环会不停的检查调用栈看是否有需要执行的函数</p>
+          <p>这么做会添加任何它找到的函数给调用栈,然后按顺序执行</p>
+          <p>可能你很熟悉error栈追踪,在debugger或者浏览器的控制台.浏览器在调用栈中寻找函数名告知你当前调用哪个函数</p>
+          <img style={{display: 'block', width: 800, height: 500}} src={eventLoop_1} alt=""/>
+          <h2>一个简单的事件循环说明</h2>
+          <p>例子</p>
+          <CodeEditor codeContent={code1} height="160px"/>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/Npx"  chooseItem={() => this.props.chooseItem('27')}/>
