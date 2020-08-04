@@ -5,11 +5,11 @@ import {
   CodeEditor
 } from '../../../commonComponents'
 import { code1, code2, code3 } from './constants'
-import eventLoop_1 from '../../../../images/eventLoop_1'
-import eventLoop_2 from '../../../../images/eventLoop_2'
-import eventLoop_3 from '../../../../images/eventLoop_3'
-import eventLoop_4 from '../../../../images/eventLoop_4'
-import eventLoop_5 from '../../../../images/eventLoop_5'
+import eventLoop_1 from '../../../../images/eventLoop_1.png'
+import eventLoop_2 from '../../../../images/eventLoop_2.png'
+import eventLoop_3 from '../../../../images/eventLoop_3.png'
+import eventLoop_4 from '../../../../images/eventLoop_4.png'
+import eventLoop_5 from '../../../../images/eventLoop_5.png'
 class EventLoop extends Component {
   componentDidMount() {
     this.props.chooseItem('28')
@@ -45,7 +45,7 @@ class EventLoop extends Component {
           <img style={{display: 'block', width: 800, height: 500}} src={eventLoop_1} alt=""/>
           <h2>一个简单的事件循环说明</h2>
           <p>例子</p>
-          <CodeEditor codeContent={code1} height="160px"/>
+          <CodeEditor codeContent={code1} height="200px"/>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/Npx"  chooseItem={() => this.props.chooseItem('27')}/>

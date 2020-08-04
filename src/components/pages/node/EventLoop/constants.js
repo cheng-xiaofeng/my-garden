@@ -25,3 +25,9 @@ foo()`
 const code3 = `foo
 baz
 bar`
+
+export {
+  code1,
+  code2,
+  code3
+}
