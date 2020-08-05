@@ -4,7 +4,7 @@ import {
   NextPage,
   CodeEditor
 } from '../../../commonComponents'
-import { code1, code2, code3 } from './constants'
+import { code1, code2, code3, code4, code5 } from './constants'
 import eventLoop_1 from '../../../../images/eventLoop_1.png'
 import eventLoop_2 from '../../../../images/eventLoop_2.png'
 import eventLoop_3 from '../../../../images/eventLoop_3.png'
@@ -71,17 +71,21 @@ class EventLoop extends Component {
           <h2>消息队列</h2>
           <p>当setTimeout被调用时,浏览器或者node会启动定时器.一旦定时器到期,这个例子中有0秒的暂停,回调函数就被放到消息队列</p>
           <p>消息队列在用户发起事件的时候也存在,像点击或者键盘事件.还有,取得响应但在做出反应之前也是队列,DOM事件也是,比如onload</p>
-
-The Message Queue is also where user-initiated events like click or keyboard events, 
-or fetch responses are queued before your code has the opportunity to react to them. 
-Or also DOM events like onLoad.
-
-The loop gives priority to the call stack, and it first processes everything it finds in the call stack, 
-and once there's nothing in there, it goes to pick up things in the message queue.
-
-We don't have to wait for functions like setTimeout, fetch or other things to do their own work, 
-because they are provided by the browser, and they live on their own threads. For example, 
-if you set the setTimeout timeout to 2 seconds, you don't have to wait 2 seconds - the wait happens elsewhere.
+          <p>循环会给调用栈优先权,会先处理在调用栈中的东西,当调用栈没有东西,才回去找消息队列</p>
+          <p>我们不会去等待像setTimeout,fetch这样的函数,因为他们是浏览器提供的,有自己的线程.
+            例如,设置两个setTimeout,暂停时间为2秒,你不是一定会等2秒,等待是在别处的
+          </p>
+          <h2>es6工作队列</h2>
+          <p>es6引入了工作队列的概念,被promise所使用.它是尽快执行异步函数结果的方法,而不是放到调用栈的最后</p>
+          <p>当前函数结束之前resolve的promise会跟随在当前函数之后执行</p>
+          <p>就像坐过山车一样:消息队列把你放到队伍的最后,你只能慢慢的去等;而工作队列是快速通道,在你结束前一次后
+            让你再坐一次
+          </p>
+          <p>例子:</p>
+          <CodeEditor codeContent={code4} height="360px"/>
+          <p>结果是:</p>
+          <CodeEditor codeContent={code5} height="100px"/>
+          <p>promise(async/await)和通过setTimeout()的普通函数是有很大不同的</p>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/Npx"  chooseItem={() => this.props.chooseItem('27')}/>
