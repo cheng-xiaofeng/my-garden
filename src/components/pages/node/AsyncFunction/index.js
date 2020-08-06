@@ -34,7 +34,7 @@ class AsyncFunction extends Component {
           <CodeEditor codeContent={codeAll.code2} height="80px"/>
           <h2>小例子:</h2>
           <p>这是一个Async/await异步运行函数的例子:</p>
-          <CodeEditor codeContent={codeAll.code3} height="330px"/>
+          <CodeEditor codeContent={codeAll.code3} height="340px"/>
           <p>输出是:</p>
           <CodeEditor codeContent={codeAll.code4} height="80px"/>
           <h2>promises所有东西</h2>
@@ -45,6 +45,20 @@ class AsyncFunction extends Component {
           <p>同样:</p>
           <CodeEditor codeContent={codeAll.code6} height="130px"/>
           <h2>代码可读性更强</h2>
+          <p>你可以看到上面的例子,代码非常简单.和用链和回调函数的纯promises对比一下</p>
+          <p>这是很简单的例子,当代码越复杂的时候,这种优势就越明显.</p>
+          <p>这是个使用promises获取json资源,并解析:</p>
+          <CodeEditor codeContent={codeAll.code7} height="260px"/>
+          <p>使用async/await来实现:</p>
+          <CodeEditor codeContent={codeAll.code8} height="280px"/>
+          <h2>多个async函数</h2>
+          <p>async函数链起来也很容易,比纯promises可读性更强:</p>
+          <CodeEditor codeContent={codeAll.code9} height="560px"/>
+          <p>打印出来是:</p>
+          <CodeEditor codeContent={codeAll.code10} height="80px"/>
+          <h2>更容易调试</h2>
+          <p>调试promise比较难因为调试器在异步代码中不会停止</p>
+          <p>async/await就简单了,因为在编译器这像是同步代码</p>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/promise" chooseItem={() => this.props.chooseItem('33')}/>
