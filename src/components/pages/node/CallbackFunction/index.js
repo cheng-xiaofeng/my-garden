@@ -29,11 +29,44 @@ class CallbackFunction extends Component {
           <h2>JavaScript</h2>
           <p>JavaScript是同步且单线程的,这意味着它不能建立新的线程来同时运行</p>
           <p>代码会一行接一行按顺序执行</p>
-          <CodeEditor codeContent={codeAll.code1} height="120px"/>
+          <CodeEditor codeContent={codeAll.code1} height="130px"/>
+          <p>js是在浏览器内诞生的,主要工作是响应用户的操作,比如onClick,onMouseOver,onChange,onSubmit等.
+            它是怎么考同步编程模型做大这些的?
+          </p>
+          <p>答案是环境.浏览器提供了一系列API来处理这些功能</p>
+          <p>最近,node也引进了非阻塞I/O环境继承了这个概念来访问文件,网路请求等</p>
+          <h2>回调函数</h2>
+          <p>你不知道用户什么时候回点击按钮.所以你给点击事件定义了一个事件句柄.这个事件句柄接受一个函数,
+            当事件被触发时就会调用
+          </p>
+          <CodeEditor codeContent={codeAll.code2} height="100px"/>
+          <p>这就是回调函数</p>
+          <p>回调函数就是一个普通的函数作为值传个另一个函数,只有在事件发生的时候才会执行.js拥有一等公民-函数,所以我们
+            可以这么做,它可以赋值给变量,然后传给其他函数(叫高阶函数)
+          </p>
+          <p>将客户端代码放到window对象的load事件监听中是很常见的,当页面准备好的时候就会运行回调函数:</p>
+          <CodeEditor codeContent={codeAll.code3} height="100px"/>
+          <p>回调函数随处可见,并不只是DOM事件</p>
+          <p>另一个很常见的例子就是定时器:</p>
+          <CodeEditor codeContent={codeAll.code4} height="80px"/>
+          <p>XHR请求也接受一个回调函数,在这个例子中,将函数付给一个属性,当特定的事件发生时就会被调用(这里是请求状态的改变)</p>
+          <CodeEditor codeContent={codeAll.code5} height="220px"/>
+          <h2>回调函数中处理错误</h2>
+          <p>回调函数怎么处理错误?最常见的就是使用node做采用的方法:回调函数的第一个参数是error对象:错误优先回调</p>
+          <p>没有错误,对象就是null.有错误,它就会包含一个错误的描述和其他信息:</p>
+          <CodeEditor codeContent={codeAll.code6} height="260px"/>
+          <h2>回调函数的问题</h2>
+          <p>在简单的环境中,回调函数很棒</p>
+          <p>然而每个回调都会增加以及嵌套,当有很多回调时,代码就变得很是复杂</p>
+          <CodeEditor codeContent={codeAll.code7} height="260px"/>
+          <p>这仅仅只是个4级嵌套,还有更多的呢</p>
+          <p>怎么解决这个情况呢?</p>
+          <h2>回调函数的替代选择</h2>
+          <p>es6开始,js引入了几个解决异步问题的新特性:Promises和Async/Await</p>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/Timer" chooseItem={() => this.props.chooseItem('31')}/>
-          <NextPage url="/node/PromiseFunction" chooseItem={() => this.props.chooseItem('33')}/>
+          <NextPage url="/node/promise" chooseItem={() => this.props.chooseItem('33')}/>
         </div>
       </div>
     );

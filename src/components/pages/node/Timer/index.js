@@ -60,7 +60,7 @@ class Timer extends Component {
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/SetImmediate" chooseItem={() => this.props.chooseItem('30')}/>
-          <NextPage url="/node/CallbackFunction" chooseItem={() => this.props.chooseItem('32')}/>
+          <NextPage url="/node/callback" chooseItem={() => this.props.chooseItem('32')}/>
         </div>
       </div>
     );

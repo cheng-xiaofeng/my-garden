@@ -10,9 +10,9 @@ class ForwardPage extends Component {
   }
   render() {
     return (
-      <div onClick={this.clickPage}>
+      <span onClick={this.clickPage}>
         <Link to={this.props.url}>上一页</Link>
-      </div>
+      </span>
     );
   }
 }

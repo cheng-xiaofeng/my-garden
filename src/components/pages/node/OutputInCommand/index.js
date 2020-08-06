@@ -86,8 +86,8 @@ class OutputInCommand extends Component {
           <CodeEditor codeContent={code11} height="240px"/>
         </div>
         <div className="clickPage">
-          <ForwardPages url="" chooseItem={() => this.props.chooseItem('11')}/>
-          <NextPage url="" chooseItem={() => this.props.chooseItem('13')}/>
+          <ForwardPages url="/node/commandArguments" chooseItem={() => this.props.chooseItem('11')}/>
+          <NextPage url="/node/acceptCommand" chooseItem={() => this.props.chooseItem('13')}/>
         </div>
       </div>
     );
