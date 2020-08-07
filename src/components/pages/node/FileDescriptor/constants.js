@@ -1,7 +1,7 @@
 const code1 = `const fs = require('fs')
 
 fs.open('/Users/joe/test.txt', 'r', (err, fd) => {
-  //fd is our file descriptor
+  //fd is our file descriptor   打印出来是个数字
 })`
 
 const code2 = `const fs = require('fs')
