@@ -68,19 +68,19 @@ class HttpModule extends Component {
           <h2>http.ServerResponse</h2>
           <p>由http.Server创建,并作为请求事件的第二个参数,通常被写成res:</p>
           <CodeEditor codeContent={codeAll.code5} height="80px"/>
-          The method you'll always call in the handler is end(), 
-          which closes the response, the message is complete and the server can send it to the client. 
-          It must be called on each response.
+          <p>最常调用的方法是end(),用来关闭response,这是message已经完成并被发送给客户端.每次响应都要调用end()</p>
+          <p>一下方法是跟http的请求头相关的:</p>
+          <ul>
+            <li>getHeaderNames(): 获取已经设置的http请求头的名称的列表</li>
+            <li>getHeaders(): 获取已经设置的http头部的副本</li>
+            <li>setHeader('headername', value): 设置http头部的值</li>
+            <li>getHeader('headername'): 获取已经设置的http头部的值</li>
+            <li>removeHeader('headername'): 移除一个已经设置的http头部</li>
+            <li>hasHeader('headername'): 如果response有这个头部则为返回true</li>
+            <li>headersSent(): 头部被发送给客户端时返回true</li>
+            <li></li>
+          </ul>
 
-These methods are used to interact with HTTP headers:
-
-getHeaderNames() get the list of the names of the HTTP headers already set
-getHeaders() get a copy of the HTTP headers already set
-setHeader('headername', value) sets an HTTP header value
-getHeader('headername') gets an HTTP header already set
-removeHeader('headername') removes an HTTP header already set
-hasHeader('headername') return true if the response has that header set
-headersSent() return true if the headers have already been sent to the client
 After processing the headers you can send them to the client by calling response.writeHead(), 
 which accepts the statusCode as the first parameter, the optional status message, and the headers object.
 
