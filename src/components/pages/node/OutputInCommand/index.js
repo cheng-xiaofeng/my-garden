@@ -67,7 +67,7 @@ class OutputInCommand extends Component {
           <CodeEditor codeContent={code8} height="220px"/>
           <h2>标准输出和标准错误</h2>
           <p>console.log在控制台打印信息非常棒.这里是标准输出</p>
-          <p>console.error打印标准错误的流</p>
+          <p>console.error打印标准错误的数据流</p>
           <p>在控制台不会出现,但在错误日志中会出现</p>
           <h2>给输出加颜色</h2>
           <p>你可以用转译序列给你的文本上色.转译序列就是代表颜色的一组字母</p>

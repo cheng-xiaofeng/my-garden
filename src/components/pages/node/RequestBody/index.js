@@ -24,9 +24,9 @@ class RequestBody extends Component {
             就要多费点事了.当然,express替你做了不少
           </p>
           <p>关键是当你用http.createServer()初始化http服务器的时候,服务器获取到所有的请求头就会调用回调函数而不是请求的body</p>
-          <p>传给回调函数的request对象是一个流</p>
+          <p>传给回调函数的request对象是一个数据流</p>
           <p>所以我们要监听body的内容被处理,并且是以chunks的方式</p>
-          <p>首先通过监听流的data事件获取到数据,当没有数据时,流的end事件就被调用:</p>
+          <p>首先通过监听数据流的data事件获取到数据,当没有数据时,数据流的end事件就被调用:</p>
           <CodeEditor codeContent={codeAll.code3} height="260px"/>
           <p>访问数据,假设我们想要接收到一个字符串,我们先要把它放进一个数组:</p>
           <CodeEditor codeContent={codeAll.code4} height="260px"/>

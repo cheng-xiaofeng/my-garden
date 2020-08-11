@@ -78,18 +78,31 @@ class HttpModule extends Component {
             <li>removeHeader('headername'): 移除一个已经设置的http头部</li>
             <li>hasHeader('headername'): 如果response有这个头部则为返回true</li>
             <li>headersSent(): 头部被发送给客户端时返回true</li>
-            <li></li>
           </ul>
-
-After processing the headers you can send them to the client by calling response.writeHead(), 
-which accepts the statusCode as the first parameter, the optional status message, and the headers object.
-
-To send data to the client in the response body, you use write(). 
-It will send buffered data to the HTTP response stream.
-
-If the headers were not sent yet using response.writeHead(), 
-it will send the headers first, with the status code and message that's set in the request,
- which you can edit by setting the statusCode and statusMessage properties values:
+          <p>处理好header后,你可以调用response.writeHead()将其发送给客户端,第一个参数是statusCode,
+            还有可选的状态信息和头部对象
+          </p>
+          <p>使用write()方法在response的body中将数据发送给客户端.它将会给http response数据流发送buffer数据</p>
+          <p>如果使用response.writeHead()还没有发送头部信息,它将会先发送头部,在发送request中的statusCode和状态信息,
+            当然你可以编辑状态码和状态信息:
+          </p>
+          <CodeEditor codeContent={codeAll.code6} height="60px"/>
+          <h2>http.IncomingMessage</h2>
+          <p>http.IncomingMessage对象会被以下方法创建:</p>
+          <ul>
+            <li>http.server 监听request事件</li>
+            <li>http.ClientRequest 监听response事件</li>
+          </ul>
+          <p>可以用来访问response:</p>
+          <ul>
+            <li>status使用statusCode和statusMessage方法</li>
+            <li>headers使用headers或rawHeaders方法</li>
+            <li>http 使用http的方法</li>
+            <li>http 版本使用httpVersion方法</li>
+            <li>URL使用url方法</li>
+            <li>underlying socket使用socket方法</li>
+          </ul>
+          <p>data使用数据流来访问的,因为http.IncomingMessage部署了可读的数据流的接口</p>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/eventsModule" chooseItem={() => this.props.chooseItem('49')}/>

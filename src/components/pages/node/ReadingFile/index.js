@@ -20,7 +20,7 @@ class ReadingFile extends Component {
           <CodeEditor codeContent={codeAll.code2} height="240px"/>
           <p>fs.readFile() 和 fs.readFileSync()在返回数据之前会在内存中读取全部的文件内容</p>
           <p>也就是说大文件的话,会对内存有很大的消耗,对程序的运行速度也有较大的影响</p>
-          <p>这种情况下,选择流比较好</p>
+          <p>这种情况下,选择数据流比较好</p>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/filePath" chooseItem={() => this.props.chooseItem('42')}/>

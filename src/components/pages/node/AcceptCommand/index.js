@@ -15,8 +15,8 @@ class AcceptCommand extends Component {
         <h1 className='article-reader__headline'>接受命令行的输入</h1>
         <div className='articleConent'>
           <p>怎么使node.js CLI程序具有交互性</p>
-          <p>node.js 7提供了一个<a href="https://nodejs.org/api/readline.html">readline</a>模块可以这么做:从一个可读的流,
-          像process.stdin流,获取到输入的东西,
+          <p>node.js 7提供了一个<a href="https://nodejs.org/api/readline.html">readline</a>模块可以这么做:从一个可读的数据流,
+          像process.stdin数据流,获取到输入的东西,
           在node执行的时候就是终端输入,一次一行</p>
           <CodeEditor codeContent={code1} height="240px"/>
           <p>这段代码啊要求用户名,一旦输入文本并且按下enter,就会发送一条问候</p>
