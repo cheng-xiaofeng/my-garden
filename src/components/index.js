@@ -17,6 +17,7 @@ class PagesIndex extends Component {
           <MainHeader />
           <Switch>
             <Route path='/' exact component={HomePage}/>
+            <Route path='/my-garden' exact component={HomePage}/>
             <Route path="/node*" exact component={NodeContent}/>
             <Route path="/myblog*" exact component={BlogContent}/>
           </Switch>
