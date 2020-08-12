@@ -28,6 +28,29 @@ class HandlingError extends Component {
           <CodeEditor codeContent={codeAll.code2} height="40px"/>
           <p>或者</p>
           <CodeEditor codeContent={codeAll.code3} height="110px"/>
+          <h2>处理异常</h2>
+          <p>异常处理程序就是try/catch语句</p>
+          <p>任何代码中的异常包括try区域的异常都会在相应的catch区域处理</p>
+          <CodeEditor codeContent={codeAll.code4} height="80px"/>
+          <p>e代表的就是异常值</p>
+          <p>可以加很多处理程序,这样就可以捕捉不同的错误</p>
+          <h2>捕捉未捕获到的异常</h2>
+          <p>在程序执行中有未捕获到的异常抛出时,程序就崩了</p>
+          <p>为了解决这个问题,在process对象中监听uncaughtException事件:</p>
+          <CodeEditor codeContent={codeAll.code5} height="100px"/>
+          <p>不用引进process核心模块,会自动注入</p>
+          <h2>promises中的异常</h2>
+          <p>promises可以链不同的操作,然后在最后处理错误:</p>
+          <CodeEditor codeContent={codeAll.code6} height="100px"/>
+          <p>那你怎么知道错误发生的位置呢?你不用知道,可以在每个回调函数(doSomethingX)内处理错误,
+            然后再抛出新的错误,就会被外部的catch捕捉到
+          </p>
+          <CodeEditor codeContent={codeAll.code7} height="260px"/>
+          <p>为了局部处理错误而不是在我们的回调中处理,我们可以打破链结构,在每个then方法里面建一个函数来说胡成立错误:</p>
+          <CodeEditor codeContent={codeAll.code8} height="350px"/>
+          <h2>async/await中处理错误</h2>
+          <p>async.await这么来做</p>
+          <CodeEditor codeContent={codeAll.code9} height="200px"/>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/environmentDiffrence" chooseItem={() => this.props.chooseItem('53')}/>
