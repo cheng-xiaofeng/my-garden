@@ -14,6 +14,7 @@ class FilePath extends Component {
       <div>
         <h1 className='article-reader__headline'>文件路径</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/nodejs-file-paths">https://nodejs.dev/learn/nodejs-file-paths</a></p>
           <p>系统中的每个文件都有一个路径</p>
           <p>Linux和macOS中,路径像这样:/users/joe/file.txt</p>
           <p>Windows中不大一样,像这个样字:C:\users\joe\file.txt</p>

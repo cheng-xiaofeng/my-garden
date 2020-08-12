@@ -14,6 +14,7 @@ class FileDescriptor extends Component {
       <div>
         <h1 className='article-reader__headline'>node的文件描述符</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/working-with-file-descriptors-in-nodejs">https://nodejs.dev/learn/working-with-file-descriptors-in-nodejs</a></p>
           <p>在与文件系统中的文件交互之前,你要先取得文件描述符</p>
           <p>文件描述符是fs模块中的open方法打开文件时返回来的</p>
           <CodeEditor codeContent={codeAll.code1} height="130px"/>

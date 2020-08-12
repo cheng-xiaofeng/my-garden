@@ -23,6 +23,7 @@ class CommandArguments extends Component {
       <div>
         <h1 className='article-reader__headline'>接受命令行的参数</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/nodejs-accept-arguments-from-the-command-line">https://nodejs.dev/learn/nodejs-accept-arguments-from-the-command-line</a></p>
           <p>启动node.js程序的时候可以传入任何参数:</p>
           <CodeEditor codeContent={startCode} height="40px"/>
           <p>参数可以是单独的,也可以是键值对</p>
@@ -46,7 +47,7 @@ class CommandArguments extends Component {
           <CodeEditor codeContent={args2} height="60px"/>
           <p>下面这样:</p>
           <CodeEditor codeContent={startCode3} height="40px"/>
-          <p>args[0]是name=joe,你就需要解析它.最好的方式是使用<a href="https://www.npmjs.com/package/minimist">minimist</a>库,
+          <p>args[0]是name=joe,你就需要解析它.最好的方式是使用<a target="_blank" href="https://www.npmjs.com/package/minimist">minimist</a>库,
             可以解决这种情况:
           </p>
           <CodeEditor codeContent={args3} height="60px"/>

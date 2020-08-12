@@ -14,6 +14,7 @@ class WorkingFolder extends Component {
       <div>
         <h1 className='article-reader__headline'>操作文件夹</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/working-with-folders-in-nodejs">https://nodejs.dev/learn/working-with-folders-in-nodejs</a></p>
           <p>node的fs核心模块有很多很方便的方法操作文件夹</p>
           <h2>检查文件夹是否存在</h2>
           <p>fs.access()检查文件夹是否存在,有它的权限node就可以访问(此句不通)</p>
@@ -36,7 +37,7 @@ class WorkingFolder extends Component {
           <h2>移除文件夹</h2>
           <p>fs.rmdir() 或 fs.rmdirSync()移除文件夹</p>
           <p>移除有内容的文件夹会比较复杂</p>
-          <p>安装<a href="https://www.npmjs.com/package/fs-extra">fs-extra</a>模块,很流行,维护的也很好.
+          <p>安装<a target="_blank" href="https://www.npmjs.com/package/fs-extra">fs-extra</a>模块,很流行,维护的也很好.
             fs的替代模块,提供了更多的特性
           </p>
           <p>这种情况remove()技术你所需要的</p>

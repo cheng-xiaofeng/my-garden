@@ -14,10 +14,11 @@ class PromiseFunction extends Component {
       <div>
         <h1 className='article-reader__headline'>理解js的Promises</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/understanding-javascript-promises">https://nodejs.dev/learn/understanding-javascript-promises</a></p>
           <h2>promises简介</h2>
           <CodeEditor codeContent={codeAll.code1} height="600px"/>
           <p>promise通常被定义成一个最终会被获取到的值得代理</p>
-          <p>promises解决一步的一种方式,不会困在<a href="http://callbackhell.com/">回调地狱中</a></p>
+          <p>promises解决一步的一种方式,不会困在<a target="_blank" href="http://callbackhell.com/">回调地狱中</a></p>
           <p>promises几年前成为js的一部分(2015年标准化并引入),最近和2017的Async/Await互相结合</p>
           <p>异步函数使用promises,所以理解promises是理解async和await的基础</p>
           <h2>简短的说一下promise怎么工作</h2>
@@ -42,12 +43,12 @@ class PromiseFunction extends Component {
             (如果两个回调函数都没有被调用,promise就会停留在pending状态)
           </p>
           <p>使用resolve和reject,我们就能知道promise的结果的状态,就知道怎么去做了.上面,我们返回一个字符串,
-            但也可以是一个对象,或者null.我们已经创建了promise,它已经在执行.这对理解下面的<a href="#consumPromise">Consuming a promise</a>
+            但也可以是一个对象,或者null.我们已经创建了promise,它已经在执行.这对理解下面的<a target="_blank" href="#consumPromise">Consuming a promise</a>
             很重要
           </p>
           <p>你也可能见过Promisifying,使用js函数返回一个promise</p>
           <CodeEditor codeContent={codeAll.code3} height="460px"/>
-          <p>注意: 在最近的node版本中,你不需要手动切换许多API. <a href="https://nodejs.org/docs/latest-v11.x/api/util.html#util_util_promisify_original">util module</a>
+          <p>注意: 在最近的node版本中,你不需要手动切换许多API. <a target="_blank" href="https://nodejs.org/docs/latest-v11.x/api/util.html#util_util_promisify_original">util module</a>
             有promisifying函数会替你做.假定你promisifying的函数有签名
           </p>
           <h2 id="consumPromise">Consuming a promise</h2>
@@ -64,7 +65,7 @@ class PromiseFunction extends Component {
           <h2>promise链例子:</h2>
           <CodeEditor codeContent={codeAll.code5} height="500px"/>
           <p>这个例子中,我们用fetch获取到根目录下的todos.json文件的TODO列表,然后创建promise链</p>
-          <p>运行fetch(),返回一个<a href="https://fetch.spec.whatwg.org/#concept-response">response</a>,
+          <p>运行fetch(),返回一个<a target="_blank" href="https://fetch.spec.whatwg.org/#concept-response">response</a>,
             response有很多属性,这里是指:
           </p>
           <ul>

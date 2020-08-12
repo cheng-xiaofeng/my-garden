@@ -14,12 +14,13 @@ class OSModule extends Component {
       <div>
         <h1 className='article-reader__headline'>os模块</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/the-nodejs-os-module">https://nodejs.dev/learn/the-nodejs-os-module</a></p>
           <p>这个模块提供了很多函数,可以用来获取底层操作系统的信息以及程序运算的计算机的信息,并进行交互</p>
           <CodeEditor codeContent={codeAll.code1} height="40px"/>
           <p>有一些很有用的属性可以告诉我们处理文件的关键事情:</p>
           <p>os.EOL给的是分隔符序列.Linux和macOS上是\n,Windows上是\r\n</p>
           <p>os.constants.signals是跟进程信号相关的常量,像SIGHUP,SIGKILL等</p>
-          <p>在<a href="https://nodejs.org/api/os.html#os_signal_constants">这里</a>可以看到更多信息</p>
+          <p>在<a target="_blank" href="https://nodejs.org/api/os.html#os_signal_constants">这里</a>可以看到更多信息</p>
           <p>现在来看看你os提供的主要方法:</p>
           <h2>os.arch()</h2>
           <p>返回代表底层架构的字符串,像arm,x64,arm64</p>

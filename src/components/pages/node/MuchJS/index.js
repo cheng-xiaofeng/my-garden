@@ -13,6 +13,7 @@ export default class MuchJS extends Component {
       <div>
         <h1 className='article-reader__headline'>学习node.js你需要知道多少JavaScript?</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/how-much-javascript-do-you-need-to-know-to-use-nodejs">https://nodejs.dev/learn/how-much-javascript-do-you-need-to-know-to-use-nodejs</a></p>
           <p>作为初学者,你很难get到你对自己的编程能力有多少信心</p>
           <p>写代码的时候,也许你会困惑JavaScript在哪里结束,node.js在哪里开始.反之亦然</p>
           <p>进入node.js之前,我觉得你要对JavaScript的主要概念有一个比较好的理解:</p>

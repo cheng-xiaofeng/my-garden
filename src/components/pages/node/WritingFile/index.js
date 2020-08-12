@@ -14,6 +14,7 @@ class WritingFile extends Component {
       <div>
         <h1 className='article-reader__headline'>写入文件</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/writing-files-with-nodejs">https://nodejs.dev/learn/writing-files-with-nodejs</a></p>
           <p>写入文件最简单的方法就是fs.writeFile()</p>
           <CodeEditor codeContent={codeAll.code1} height="300px"/>
           <p>也可以用同步版本:</p>
@@ -28,7 +29,7 @@ class WritingFile extends Component {
             <li>a 写入文件,将数据流定位到文件的末尾.如果没有就创建新的</li>
             <li>a+ 读取和写入文件,将数据流定位到文件的末尾.如果没有就创建新的</li>
           </ul>
-          <p><a href="https://nodejs.org/api/fs.html#fs_file_system_flags">这里</a>有更多标识</p>
+          <p><a target="_blank" href="https://nodejs.org/api/fs.html#fs_file_system_flags">这里</a>有更多标识</p>
           <h2>插入文件</h2>
           <p>插入文件尾部的方法是fs.appendFile()(fs.appendFileSync()类似):</p>
           <CodeEditor codeContent={codeAll.code4} height="240px"/>

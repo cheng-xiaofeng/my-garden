@@ -14,6 +14,7 @@ class PerformHttpRequest extends Component {
       <div>
         <h1 className='article-reader__headline'>node中的http请求</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/making-http-requests-with-nodejs">https://nodejs.dev/learn/making-http-requests-with-nodejs</a></p>
           <h2>执行get请求</h2>
           <CodeEditor codeContent={codeAll.code1} height="560px"/>
           <h2>执行post请求</h2>

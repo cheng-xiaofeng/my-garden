@@ -14,8 +14,9 @@ class AcceptCommand extends Component {
       <div>
         <h1 className='article-reader__headline'>接受命令行的输入</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/accept-input-from-the-command-line-in-nodejs">https://nodejs.dev/learn/accept-input-from-the-command-line-in-nodejs</a></p>
           <p>怎么使node.js CLI程序具有交互性</p>
-          <p>node.js 7提供了一个<a href="https://nodejs.org/api/readline.html">readline</a>模块可以这么做:从一个可读的数据流,
+          <p>node.js 7提供了一个<a target="_blank" href="https://nodejs.org/api/readline.html">readline</a>模块可以这么做:从一个可读的数据流,
           像process.stdin数据流,获取到输入的东西,
           在node执行的时候就是终端输入,一次一行</p>
           <CodeEditor codeContent={code1} height="240px"/>
@@ -24,8 +25,8 @@ class AcceptCommand extends Component {
           <p>在回调函数中, 我men关掉了readline interface</p>
           <p>readline还有其他的方法,你可以通过上面的链接去了解</p>
           <p>如果你需要密码,最好不要返回出来,而是显示*</p>
-          <p>使用<a href="https://www.npmjs.com/package/readline-sync">readline-sync</a>包,API跟这个很相似,开箱即用</p>
-          <p>一个更完整更纯粹的解决方法是<a href="https://github.com/SBoudrias/Inquirer.js">Inquirer.js package</a></p>
+          <p>使用<a target="_blank" href="https://www.npmjs.com/package/readline-sync">readline-sync</a>包,API跟这个很相似,开箱即用</p>
+          <p>一个更完整更纯粹的解决方法是<a target="_blank" href="https://github.com/SBoudrias/Inquirer.js">Inquirer.js package</a></p>
           <p>你可以这样安装:npm install inquirer,然后替换上面的代码:</p>
           <CodeEditor codeContent={code2} height="340px"/>
         </div>

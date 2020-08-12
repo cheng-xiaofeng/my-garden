@@ -14,6 +14,7 @@ class HandlingError extends Component {
       <div>
         <h1 className='article-reader__headline'>错误处理</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/error-handling-in-nodejs">https://nodejs.dev/learn/error-handling-in-nodejs</a></p>
           <p>node中的错误是通过异常处理的</p>
           <h2>创建异常</h2>
           <p>通过throw关键字创建异常:</p>
@@ -22,7 +23,7 @@ class HandlingError extends Component {
           <p>通常客户端的代码值可以是任何js值,包括字符串,数字和对象</p>
           <p>node中,不会抛出字符串,只抛出error对象</p>
           <h2>Error对象</h2>
-          <p>error对象要么是Error对象的实例,要么是继承自Error类,由<a href="https://nodejs.org/api/errors.html">Error
+          <p>error对象要么是Error对象的实例,要么是继承自Error类,由<a target="_blank" href="https://nodejs.org/api/errors.html">Error
             核心模块</a>提供
           </p>
           <CodeEditor codeContent={codeAll.code2} height="40px"/>

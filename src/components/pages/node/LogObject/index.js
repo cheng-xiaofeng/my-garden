@@ -17,6 +17,7 @@ class LogObject extends Component {
       <div>
         <h1 className='article-reader__headline'>node中log一个对象</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/how-to-log-an-object-in-nodejs">https://nodejs.dev/learn/how-to-log-an-object-in-nodejs</a></p>
           <p>当console.log运行在浏览器中时,就可以看到:</p>
           <img style={{display: 'block', width: 600, height: 100}} src={log_1} alt=""/>
           <p>点击箭头,日志就会展开,可以很清楚的看到对象的属性:</p>

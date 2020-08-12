@@ -12,6 +12,7 @@ class Dependencies extends Component {
       <div>
         <h1 className='article-reader__headline'>依赖与开发依赖</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/npm-dependencies-and-devdependencies">https://nodejs.dev/learn/npm-dependencies-and-devdependencies</a></p>
           <p>用npm install 包名 安装一个包,就是作为依赖安装的</p>
           <p>包会自动陈列在package.json文件中,在dependencies列表下(需要手动指定--save)</p>
           <p>-D或者--save-dev符号,会安装为开发依赖,添加到devDependenciee</p>

@@ -14,8 +14,9 @@ class Npx extends Component {
       <div>
         <h1 className='article-reader__headline'>npx命令</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/the-npx-nodejs-package-runner">https://nodejs.dev/learn/the-npx-nodejs-package-runner</a></p>
           <p>2017年7月,npm 5.2版本发布了很强大的npx命令</p>
-          <p>注意:不想安装npm,可以单独安装<a href="https://www.npmjs.com/package/npx">npx</a></p>
+          <p>注意:不想安装npm,可以单独安装<a target="_blank" href="https://www.npmjs.com/package/npx">npx</a></p>
           <p>npx可以运行node代码,通过npm仓库发行</p>
           <h2>更少安装命令执行</h2>
           <p>npx有一个极好的特性, 不用安装即可执行命令</p>
@@ -38,7 +39,7 @@ class Npx extends Component {
           <p>还有更多</p>
           <p>一旦被下载,下载的代码会被抹除</p>
           <h2>使用不同的node版本运行代码</h2>
-          <p>使用@符指定版本,组合<a href="https://www.npmjs.com/package/node">npm包</a></p>
+          <p>使用@符指定版本,组合<a target="_blank" href="https://www.npmjs.com/package/node">npm包</a></p>
           <CodeEditor codeContent={code3} height="60px"/>
           <p>这可以避免使用nvm或其他node版本控制工具</p>
           <h2>运行url中的代码片段</h2>

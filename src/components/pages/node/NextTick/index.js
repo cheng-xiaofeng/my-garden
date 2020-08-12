@@ -14,6 +14,7 @@ class NextTick extends Component {
       <div>
         <h1 className='article-reader__headline'>理解process.nextTick()</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/understanding-process-nexttick">https://nodejs.dev/learn/understanding-process-nexttick</a></p>
           <p>理解node的事件循环,proces.nextTick是很重要的一环</p>
           <p>事件循环完整的走一遍就是一个tick</p>
           <CodeEditor codeContent={code2} height="460px"/>

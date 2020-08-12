@@ -12,6 +12,7 @@ class BriefHistory extends Component {
       <div>
         <h1 className='article-reader__headline'>node简史</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/a-brief-history-of-nodejs">https://nodejs.dev/learn/a-brief-history-of-nodejs</a></p>
           <p>不管你信不信, node.js到现在也就10年的事件</p>
           <p>对比一下,JavaScript是24年,web是30年</p>
           <p>在技术史上,10年并不是很长的时间,但node.js却好像一直都在一样</p>
@@ -42,18 +43,18 @@ class BriefHistory extends Component {
           <h2>2009</h2>
           <ul>
             <li>node.js诞生</li>
-            <li>第一个<a href="https://www.npmjs.com/">npm</a>结构诞生</li>
+            <li>第一个<a target="_blank" href="https://www.npmjs.com/">npm</a>结构诞生</li>
           </ul>
           <h2>2010</h2>
           <ul>
-            <li><a href="https://expressjs.com/">express</a>诞生</li>
-            <li><a href="https://socket.io/">Socket.io</a>诞生</li>
+            <li><a target="_blank" href="https://expressjs.com/">express</a>诞生</li>
+            <li><a target="_blank" href="https://socket.io/">Socket.io</a>诞生</li>
           </ul>
           <h2>2011</h2>
           <ul>
             <li>npm发布1.0版本</li>
             <li>大公司开始接受node.js:像LinkedIn, Uber, </li>
-            <li><a href="https://hapi.dev/">hapi</a>出现</li>
+            <li><a target="_blank" href="https://hapi.dev/">hapi</a>出现</li>
           </ul>
           <h2>2012</h2>
           <ul>
@@ -61,8 +62,8 @@ class BriefHistory extends Component {
           </ul>
           <h2>2013</h2>
           <ul>
-            <li>第一个使用node.js的博客平台: <a href="https://ghost.org/">Ghost</a></li>
-            <li><a href="https://koajs.com/">Koa</a>出生</li>
+            <li>第一个使用node.js的博客平台: <a target="_blank" href="https://ghost.org/">Ghost</a></li>
+            <li><a target="_blank" href="https://koajs.com/">Koa</a>出生</li>
           </ul>
           <h2>2014</h2>
           <ul>
@@ -70,7 +71,7 @@ class BriefHistory extends Component {
           </ul>
           <h2>2015</h2>
           <ul>
-            <li><a href="https://openjsf.org/">Node.js Foundation</a>出生</li>
+            <li><a target="_blank" href="https://openjsf.org/">Node.js Foundation</a>出生</li>
             <li>IO.js合入node.js</li>
             <li>npm引入私有模块</li>
             <li>node.js 4 发布(1, 2, 3没有预先发布过)</li>
@@ -78,7 +79,7 @@ class BriefHistory extends Component {
           <h2>2016</h2>
           <ul>
             <li>leftpad incident(不知道什么东西)</li>
-            <li><a href="https://classic.yarnpkg.com/en/">yarn</a>诞生</li>
+            <li><a target="_blank" href="https://classic.yarnpkg.com/en/">yarn</a>诞生</li>
             <li>node.js 6 发布</li>
           </ul>
           <h2>2017</h2>
@@ -92,7 +93,7 @@ class BriefHistory extends Component {
           <h2>2018</h2>
           <ul>
             <li>Node.js 10</li>
-            <li><a href="https://nodejs.org/api/esm.html">ES modules.mjs </a>实验性支持</li>
+            <li><a target="_blank" href="https://nodejs.org/api/esm.html">ES modules.mjs </a>实验性支持</li>
           </ul>
         </div>
         <div className="clickPage">

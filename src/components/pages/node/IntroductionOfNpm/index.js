@@ -14,12 +14,13 @@ class IntroductionOfNpm extends Component {
       <div>
         <h1 className='article-reader__headline'>npm包管理器介绍</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/an-introduction-to-the-npm-package-manager">https://nodejs.dev/learn/an-introduction-to-the-npm-package-manager</a></p>
           <h2>npm介绍</h2>
           <p>npm是node的包管理器标准</p>
           <p>2017年一月,npm仓库已经有超过350000个包,是地球上最大的单语言代码仓库,几乎拥有适合所有事情的包</p>
           <p>开始只是下载和管理node包的依赖,后来成了前端js的工具</p>
           <p>npm可以做很多事情</p>
-          <p>注意: <a href="https://classic.yarnpkg.com/en/">yarn</a>跟npm差不多,你也可以了解一下</p>
+          <p>注意: <a target="_blank" href="https://classic.yarnpkg.com/en/">yarn</a>跟npm差不多,你也可以了解一下</p>
           <h2>下载</h2>
           <p>npm管理,下载你项目的依赖</p>
           <h2>安装所有依赖</h2>

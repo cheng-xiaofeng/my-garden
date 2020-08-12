@@ -12,6 +12,7 @@ class SemanticVersion extends Component {
       <div>
         <h1 className='article-reader__headline'>npm语义化版本控制</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/semantic-versioning-using-npm">https://nodejs.dev/learn/semantic-versioning-using-npm</a></p>
           <p>node包有一个好处就是都遵循语义化版本控制</p>
           <p>语义化版本概念很简单: 3个数字:x.y.z</p>
           <ul>

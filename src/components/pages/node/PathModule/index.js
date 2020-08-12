@@ -14,6 +14,7 @@ class PathModule extends Component {
       <div>
         <h1 className='article-reader__headline'>path模块</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/the-nodejs-path-module">https://nodejs.dev/learn/the-nodejs-path-module</a></p>
           <p>fs模块有很多非常有用的功能,可以访问文件系统,并进行交互</p>
           <p>作为node的核心模块,无需安装,require进来即可使用:</p>
           <CodeEditor codeContent={codeAll.code1} height="40px"/>

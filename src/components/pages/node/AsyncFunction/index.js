@@ -14,6 +14,7 @@ class AsyncFunction extends Component {
       <div>
         <h1 className='article-reader__headline'>Async and Await</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await">https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await</a></p>
           <h2>简介</h2>
           <p>js从回调函数进化到promises用了很短的时间,而es2017开始,有了async/await,异步就更简单了</p>
           <p>async函数是promise是和generator的结合,比promise更抽象一些:重复一遍:async/await是基于promise的</p>

@@ -14,6 +14,7 @@ class HttpModule extends Component {
       <div>
         <h1 className='article-reader__headline'>http模块</h1>
         <div className='articleConent'>
+          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/the-nodejs-http-module">https://nodejs.dev/learn/the-nodejs-http-module</a></p>
           <p>http黑心模块是node联网的关键模块</p>
           <p>这么引入:</p>
           <CodeEditor codeContent={codeAll.code1} height="40px"/>
