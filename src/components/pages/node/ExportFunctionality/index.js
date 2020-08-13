@@ -30,13 +30,16 @@ class ExportFunctionality extends Component {
           <p>第二个方法是给exports对象添加属性,这样你就可以抛出多个对象,函数或者数据:</p>
           <CodeEditor codeContent={code3} height="160px"/>
           <p>或者直接这样:</p>
-          <CodeEditor codeContent={code4} height="80px"/>
+          <CodeEditor codeContent={code4} height="110px"/>
           <p>在其他文件,你可以定义一个变量来使用它:</p>
           <CodeEditor codeContent={code5} height="60px"/>
           <p>或者:</p>
           <CodeEditor codeContent={code6} height="40px"/>
           <p>module.exports和exports有什不一样呢?</p>
-          <p>第一个抛出的是它指向的对象,第二个抛出的是它指向的属性</p>
+          <p>第一个抛出的是它指向的对象,第二个抛出的是它指向的属性.
+          module.exports就是对象car,可以直接访问car的属性,而exports则是先要访问exports的属性car,然后才能
+          访问car的属性
+          </p>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/AcceptCommand/" chooseItem={() => this.props.chooseItem('13')}/>

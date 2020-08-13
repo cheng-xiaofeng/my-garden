@@ -22,7 +22,7 @@ class AcceptCommand extends Component {
           <CodeEditor codeContent={code1} height="240px"/>
           <p>这段代码啊要求用户名,一旦输入文本并且按下enter,就会发送一条问候</p>
           <p>question()方法显示第一个参数(一个问题)然后等待用户输入,当enter被按下的时候就调用毁掉函数</p>
-          <p>在回调函数中, 我men关掉了readline interface</p>
+          <p>在回调函数中, 我们关掉了readline interface</p>
           <p>readline还有其他的方法,你可以通过上面的链接去了解</p>
           <p>如果你需要密码,最好不要返回出来,而是显示*</p>
           <p>使用<a target="_blank" href="https://www.npmjs.com/package/readline-sync">readline-sync</a>包,API跟这个很相似,开箱即用</p>

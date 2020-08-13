@@ -18,7 +18,7 @@ class FindVersion extends Component {
           <p>查看所有包的最新版本一级他们的依赖:</p>
           <CodeEditor codeContent={code1} height="40px"/>
           <p>例如:</p>
-          <CodeEditor codeContent={code2} height="300px"/>
+          <CodeEditor codeContent={code2} height="320px"/>
           <p>你也可以打开package-lock.json,不过这需要你用眼睛去看了</p>
           <p>npm list -g是一样的,只不过是全局的包</p>
           <p>使用npm list --depth=0, 只获取最顶层的包(一般就是陈列在package.json的包)</p>

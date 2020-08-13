@@ -1,4 +1,4 @@
-const code1 = `onst bar = () => console.log('bar')
+const code1 = `const bar = () => console.log('bar')
 
 const baz = () => console.log('baz')
 

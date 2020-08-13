@@ -83,9 +83,9 @@ class EventLoop extends Component {
             让你再坐一次
           </p>
           <p>例子:</p>
-          <CodeEditor codeContent={code4} height="360px"/>
+          <CodeEditor codeContent={code4} height="380px"/>
           <p>结果是:</p>
-          <CodeEditor codeContent={code5} height="100px"/>
+          <CodeEditor codeContent={code5} height="120px"/>
           <p>promise(async/await)和通过setTimeout()的普通函数是有很大不同的</p>
         </div>
         <div className="clickPage">

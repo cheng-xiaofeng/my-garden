@@ -27,7 +27,7 @@ class Npx extends Component {
           </ul>
           <p>以cowsay为例, cowsay会打印出一只牛在说你在命令行写的东西</p>
           <p>cowsay 'hello' 将会这样:</p>
-          <CodeEditor codeContent={code1} height="140px"/>
+          <CodeEditor codeContent={code1} height="210px"/>
           <p>除非全局安装cowsay,否则会报错</p>
           <p>即使不是本地安装,npx 运行命令也不会报错</p>
           <CodeEditor codeContent={code2} height="40px"/>

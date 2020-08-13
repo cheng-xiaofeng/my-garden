@@ -64,7 +64,7 @@ class OutputInCommand extends Component {
           <p>这回打印出stack trace.下面是REPL中的显示:</p>
           <CodeEditor codeContent={code7} height="290px"/>
           <h2>计算花费的时间</h2>
-          <p>使用time()和timeend()方法可以看出一个函数运行需要多少时间:</p>
+          <p>使用time()和timeEnd()方法可以看出一个函数运行需要多少时间(参数是函数名称的字符串并且带括号,像例子中那样):</p>
           <CodeEditor codeContent={code8} height="220px"/>
           <h2>标准输出和标准错误</h2>
           <p>console.log在控制台打印信息非常棒.这里是标准输出</p>
