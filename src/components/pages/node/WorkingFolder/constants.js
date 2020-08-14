@@ -20,8 +20,8 @@ const code3 = `fs.readdirSync(folderPath).map(fileName => {
   return path.join(folderPath, fileName)
 })`
 
-const code4 = `const isFile = fileName => {
-  return fs.lstatSync(fileName).isFile()
+const code4 = `const isFile = folderPath => {
+  return fs.lstatSync(folderPath).isFile()
 }
 
 fs.readdirSync(folderPath).map(fileName => {
