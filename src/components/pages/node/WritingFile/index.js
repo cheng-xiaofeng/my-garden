@@ -21,7 +21,7 @@ class WritingFile extends Component {
           <CodeEditor codeContent={codeAll.code2} height="260px"/>
           <p>默认的,这个API会覆盖原有的内容</p>
           <p>可以添加一个标识修改默认行为:</p>
-          <CodeEditor codeContent={codeAll.code3} height="40px"/>
+          <CodeEditor codeContent={codeAll.code3} height="60px"/>
           <p>其他的标识符:</p>
           <ul>
             <li>r+ 读取和写入文件</li>

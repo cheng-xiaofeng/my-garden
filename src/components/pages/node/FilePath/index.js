@@ -37,11 +37,11 @@ class FilePath extends Component {
           <p>path.join()方法可以拼合成路径</p>
           <CodeEditor codeContent={codeAll.code4} height="80px"/>
           <p>path.resolve()可以将相对路径转化成绝对路径:</p>
-          <CodeEditor codeContent={codeAll.code5} height="40px"/>
+          <CodeEditor codeContent={codeAll.code5} height="60px"/>
           <p>这里node只是简单地将/joe.txt插到当前的工作目录.如果传入第二个文件夹参数,
             resolve会将第一个参数拼在第二个参数之前
           </p>
-          <CodeEditor codeContent={codeAll.code6} height="40px"/>
+          <CodeEditor codeContent={codeAll.code6} height="60px"/>
           <p>如果第一个参数以/开始,就是说这是个绝对路径:</p>
           <CodeEditor codeContent={codeAll.code7} height="40px"/>
           <p>path.normalize()也是很有用的方法,再有相对路径符号的时候(.或..)它会尝试计算真实的路径:</p>
