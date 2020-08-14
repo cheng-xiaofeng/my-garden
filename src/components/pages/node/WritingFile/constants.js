@@ -7,7 +7,7 @@ fs.writeFile('/Users/joe/test.txt', content, err => {
     console.error(err)
     return
   }
-  //file written successfully
+  //file written successfully   会覆盖原来的文件内容
 })`
 const code2 = `const fs = require('fs')
 
