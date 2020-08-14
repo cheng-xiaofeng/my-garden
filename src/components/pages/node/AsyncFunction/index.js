@@ -54,7 +54,7 @@ class AsyncFunction extends Component {
           <CodeEditor codeContent={codeAll.code8} height="280px"/>
           <h2>多个async函数</h2>
           <p>async函数链起来也很容易,比纯promises可读性更强:</p>
-          <CodeEditor codeContent={codeAll.code9} height="560px"/>
+          <CodeEditor codeContent={codeAll.code9} height="520px"/>
           <p>打印出来是:</p>
           <CodeEditor codeContent={codeAll.code10} height="80px"/>
           <h2>更容易调试</h2>

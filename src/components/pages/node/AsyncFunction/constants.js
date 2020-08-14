@@ -67,12 +67,12 @@ const code9 = `const promiseToDoSomething = () => {
 
 const watchOverSomeoneDoingSomething = async () => {
   const something = await promiseToDoSomething()
-  return something + '\nand I watched'
+  return something + '\\nand I watched'
 }
 
 const watchOverSomeoneWatchingSomeoneDoingSomething = async () => {
   const something = await watchOverSomeoneDoingSomething()
-  return something + '\nand I watched as well'
+  return something + '\\nand I watched as well'
 }
 
 watchOverSomeoneWatchingSomeoneDoingSomething().then(res => {

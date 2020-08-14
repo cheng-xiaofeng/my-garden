@@ -20,7 +20,7 @@ class BuildHttpServer extends Component {
           <p>界面会显示:</p>
           <CodeEditor codeContent={codeAll.code2} height="40px"/>
           <p>简单分析一下,它包含<a target="_blank" href="https://nodejs.org/api/http.html">http module</a></p>
-          <p>我们使用这个模块简历http服务器</p>
+          <p>我们使用这个模块建立http服务器</p>
           <p>服务器被设定监听一个特定的端口:3000.当服务器准备好以后,监听回调函数就会被调用</p>
           <p>在每个request进来的时候我们传的回调函数都会执行.无论什么时候接收到一个新的request,
             <a target="_blank" href="https://nodejs.org/api/http.html#http_event_request">request事件</a>

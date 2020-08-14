@@ -17,7 +17,7 @@ class NextTick extends Component {
           <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/understanding-process-nexttick">https://nodejs.dev/learn/understanding-process-nexttick</a></p>
           <p>理解node的事件循环,proces.nextTick是很重要的一环</p>
           <p>事件循环完整的走一遍就是一个tick</p>
-          <CodeEditor codeContent={code2} height="460px"/>
+          <CodeEditor codeContent={code2} height="480px"/>
           <p>结果是:</p>
           <CodeEditor codeContent={code3} height="160px"/>
           <p>也就是说,一个tick是调用栈执行一次,跟工作队列和消息队列没有关系</p>

@@ -50,7 +50,8 @@ const code8 = `const myFunction = () => {
   setTimeout(myFunction, 1000)
 }
 
-setTimeout(myFunction, 1000)`
+setTimeout(myFunction, 1000) 
+// 先等一秒,再执行函数;执行完函数,再等一秒,再执行函数`
 export default{
   code1,
   code2,

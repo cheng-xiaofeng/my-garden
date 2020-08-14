@@ -46,12 +46,12 @@ class CallbackFunction extends Component {
             可以这么做,它可以赋值给变量,然后传给其他函数(叫高阶函数)
           </p>
           <p>将客户端代码放到window对象的load事件监听中是很常见的,当页面准备好的时候就会运行回调函数:</p>
-          <CodeEditor codeContent={codeAll.code3} height="100px"/>
+          <CodeEditor codeContent={codeAll.code3} height="120px"/>
           <p>回调函数随处可见,并不只是DOM事件</p>
           <p>另一个很常见的例子就是定时器:</p>
           <CodeEditor codeContent={codeAll.code4} height="80px"/>
           <p>XHR请求也接受一个回调函数,在这个例子中,将函数付给一个属性,当特定的事件发生时就会被调用(这里是请求状态的改变)</p>
-          <CodeEditor codeContent={codeAll.code5} height="220px"/>
+          <CodeEditor codeContent={codeAll.code5} height="240px"/>
           <h2>回调函数中处理错误</h2>
           <p>回调函数怎么处理错误?最常见的就是使用node做采用的方法:回调函数的第一个参数是error对象:错误优先回调</p>
           <p>没有错误,对象就是null.有错误,它就会包含一个错误的描述和其他信息:</p>

@@ -37,7 +37,7 @@ class EventEmitter extends Component {
           <p>EventEmitter也有其他的方法和事件交互,比如:</p>
           <ul>
             <li>once(): 添加一个一次监听</li>
-            <li>removeListener() / off(): 移除事件监听</li>
+            <li>removeListener() / off(): 移除事件监听. 跟js的removeEventListener一样,需要跟添加事件监听的名称,函数保持一致</li>
             <li>removeAllListeners(): 移除所有时间监听</li>
           </ul>
           <p><a target="_blank" href="https://nodejs.org/api/events.html">这里</a>可以获取到更多的细节</p>

@@ -37,7 +37,7 @@ class PromiseFunction extends Component {
           <p>现在的js不可能说不用promises,所以现在我们开始深入去理解</p>
           <h2>创建promises</h2>
           <p>promise API会抛出一个promise构造函数,可以用new Promise()来初始化:</p>
-          <CodeEditor codeContent={codeAll.code2} height="280px"/>
+          <CodeEditor codeContent={codeAll.code2} height="300px"/>
           <p>可以看到,promise检查done这个全局常量,是true的话,promise就进入resolved状态,
             (resolve的回调函数就会被调用);否则,就reject的回调函数执行,将promise置于rejected状态,
             (如果两个回调函数都没有被调用,promise就会停留在pending状态)
@@ -54,7 +54,7 @@ class PromiseFunction extends Component {
           <h2 id="consumPromise">Consuming a promise</h2>
           <p>上面我们介绍了怎么创建promise</p>
           <p>现在来看看promise是怎么被consumed或使用的</p>
-          <CodeEditor codeContent={codeAll.code4} height="300px"/>
+          <CodeEditor codeContent={codeAll.code4} height="340px"/>
           <p>运行checkIfItsDone()会有特定的函数执行,当isItDoneYet这个promise resolve(调用then)
             或reject(调用catch)
           </p>
@@ -87,12 +87,12 @@ class PromiseFunction extends Component {
           <CodeEditor codeContent={codeAll.code7} height="340px"/>
           <h2>串联错误</h2>
           <p>如果catch内部产生一个错误,可以在插进去一个catch来处理,一次类推:</p>
-          <CodeEditor codeContent={codeAll.code8} height="230px"/>
+          <CodeEditor codeContent={codeAll.code8} height="250px"/>
           <h2>Orchestrating promises(协调promise?)</h2>
           <h3>promise.all()</h3>
           <p>如果你需要同步不同的promises,Promise.all()可以帮你定义一个promise列表,当它们都resolve的时候执行:
           </p>
-          <CodeEditor codeContent={codeAll.code9} height="250px"/>
+          <CodeEditor codeContent={codeAll.code9} height="260px"/>
           <p>es2015的解构赋值允许你这么做:</p>
           <CodeEditor codeContent={codeAll.code10} height="80px"/>
           <p>当然不需要一定是fetch,其他的promise均可</p>
@@ -100,7 +100,7 @@ class PromiseFunction extends Component {
           <p>当你传的第一个promiseresolve的时候,Promise.race就会运行,只运行回调一次,和第一个promise resolve
             的结果(有点像条件 || )
           </p>
-          <CodeEditor codeContent={codeAll.code11} height="250px"/>
+          <CodeEditor codeContent={codeAll.code11} height="270px"/>
           <h2>共同错误</h2>
           <h3>Uncaught TypeError: undefined is not a promise(未捕捉到的类型错误: undefined不是一个promise)</h3>
           <p>如果出现这个错误,确保你用的是new Promise()而不只是Promise()</p>

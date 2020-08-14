@@ -53,7 +53,7 @@ class Timer extends Component {
           <p>也许有一次执行跟下一个执行重叠了:</p>
           <img style={{display:'block', width:600, height:120}} src={timer_3} alt=""/>
           <p>为了避免这个情况,设置一个递归的setTimeout,回调函数结束时调用:</p>
-          <CodeEditor codeContent={codeAll.code8} height="180px"/>
+          <CodeEditor codeContent={codeAll.code8} height="220px"/>
           <p>现在是这个样子:</p>
           <img style={{display:'block', width:600, height:120}} src={timer_4} alt=""/>
           <p><a target="_blank" href="https://nodejs.org/api/timers.html">定时器模块</a>有setTimeout和setInterval</p>
