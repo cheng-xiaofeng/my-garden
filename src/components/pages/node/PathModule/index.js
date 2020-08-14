@@ -58,9 +58,9 @@ class PathModule extends Component {
           <CodeEditor codeContent={codeAll.code10} height="80px"/>
           <h2>path.resolve()</h2>
           <p>由相对路径变为绝对路径:</p>
-          <CodeEditor codeContent={codeAll.code11} height="40px"/>
+          <CodeEditor codeContent={codeAll.code11} height="60px"/>
           <p>指定第二个参数,会将第一个参数作为第二个参数的基础:</p>
-          <CodeEditor codeContent={codeAll.code12} height="40px"/>
+          <CodeEditor codeContent={codeAll.code12} height="60px"/>
           <p>如果第一个参数以/开始,说明是个绝对路径:</p>
           <CodeEditor codeContent={codeAll.code13} height="40px"/>
         </div>
