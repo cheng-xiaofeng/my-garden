@@ -31,10 +31,10 @@ class BufferData extends Component {
           <p>建立buffer使用Buffer.from(),Buffer.alloc(),Buffer.allocUnsafe()方法:</p>
           <CodeEditor codeContent={codeAll.code1} height="40px"/>
           <ul>
-            <li>Buffer.from(array)</li>
-            <li>Buffer.from(arrayBuffer[,byteOffset[,length]])</li>
-            <li>Buffer.from(buffer)</li>
-            <li>Buffer.from(string[,encoding])</li>
+            <li><a href="https://nodejs.org/api/buffer.html#buffer_static_method_buffer_from_array">Buffer.from(array)</a></li>
+            <li><a href="https://nodejs.org/api/buffer.html#buffer_static_method_buffer_from_arraybuffer_byteoffset_length">Buffer.from(arrayBuffer[,byteOffset[,length]])</a></li>
+            <li><a href="https://nodejs.org/api/buffer.html#buffer_static_method_buffer_from_buffer">Buffer.from(buffer)</a></li>
+            <li><a href="https://nodejs.org/api/buffer.html#buffer_static_method_buffer_from_string_encoding">Buffer.from(string[,encoding])</a></li>
           </ul>
           <p>也可以传入大小来初始化buffer,以下是创建一个1kb的buffer:</p>
           <CodeEditor codeContent={codeAll.code2} height="80px"/>
@@ -47,7 +47,7 @@ class BufferData extends Component {
           </p>
           <h2>使用buffer</h2>
           <h3>访问buffer内容</h3>
-          <p>buffer就一个元素为字节的数组,所以可以像访问数组一样访问它:</p>
+          <p>buffer就是一个元素为字节的数组,所以可以像访问数组一样访问它:</p>
           <CodeEditor codeContent={codeAll.code3} height="120px"/>
           <p>这些数字就是字母的Unicode编码(H--72, e--101, y--121)</p>
           <p>toString方法可以将buffer的内容打印出来</p>

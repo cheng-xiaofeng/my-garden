@@ -35,7 +35,7 @@ class HttpModule extends Component {
           <p>返回http.server的一个实例:</p>
           <CodeEditor codeContent={codeAll.code4} height="80px"/>
           <h2>http请求( http.request())</h2>
-          <p>发送http请求给服务器,创建一个http.ClientREquest类的实例</p>
+          <p>发送http请求给服务器,创建一个http.ClientRequest类的实例</p>
           <h2>http的get方法(http.get())</h2>
           <p>跟http.request()类似,但是自动设置http方法为get,也会自动调用req.end()</p>
           <h2>类(Classes)</h2>
