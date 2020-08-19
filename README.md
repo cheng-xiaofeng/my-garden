@@ -1,5 +1,5 @@
 根据node官网翻译成中文,原文地址https://nodejs.dev/learn/introduction-to-nodejs
-
+前端发送请求给后端,url是后端的url和端口号
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
