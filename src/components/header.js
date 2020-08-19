@@ -15,6 +15,7 @@ class MainHeader extends Component {
   render() {
     return (
       <Header style={{ position: 'fixed', zIndex: 1, width: '100%', color: '#fff'}}>
+        <p style={{position: 'absolute'}}><Link to={'/'}>首页</Link></p>
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
           <Menu.Item key="1" onClick={this.clickNode}>
             <Link to={'/node'}>node</Link>
