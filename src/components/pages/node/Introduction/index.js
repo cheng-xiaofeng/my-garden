@@ -19,7 +19,7 @@ export default class Introduction extends Component {
       <div>
         <h1 className='article-reader__headline'>node简介</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/introduction-to-nodejs">https://nodejs.dev/learn/introduction-to-nodejs</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/introduction-to-nodejs">https://nodejs.dev/learn/introduction-to-nodejs</a></p>
           <p>
             node.js是一个开源且跨平台的JavaScript运行环境.几乎所有项目都可以用得到
           </p>
@@ -75,14 +75,14 @@ export default class Introduction extends Component {
                 <p>{'})'}</p>
             </code>
             </div>*/}
-          <p>这段代码首先包含了node.js的<a target="_blank" href="https://nodejs.org/api/http.html">http模块</a></p>
-          <p>node.js拥有非常优秀的<a target="_blank" href="https://nodejs.org/api/">标准库</a>,包括一流的网络支持</p>
+          <p>这段代码首先包含了node.js的<a target="_blank"  rel="noopener noreferrer" href="https://nodejs.org/api/http.html">http模块</a></p>
+          <p>node.js拥有非常优秀的<a target="_blank"  rel="noopener noreferrer" href="https://nodejs.org/api/">标准库</a>,包括一流的网络支持</p>
           <p>http的createServer()方法新建了一个http服务并返回了它</p>
           <p>这个服务会监听特定的端口和域名.当服务准备好了就回调用回调函数.在这个例子中通知我们服务正在运行</p>
           <p>
-            当接收到一个新的请求时,<a target="_blank" href="https://nodejs.org/api/http.html#http_event_request">request事件</a>就会被调用,提供了两个对象:
-            一个request(<a target="_blank" href="https://nodejs.org/api/http.html#http_class_http_incomingmessage">http.IncomingMessage对象</a>)(直译就是来消息对象)和
-            一个response(<a target="_blank" href="https://nodejs.org/api/http.html#http_class_http_serverresponse">http.ServerResponse对象</a>)(直译就是服务响应对象)
+            当接收到一个新的请求时,<a target="_blank"  rel="noopener noreferrer" href="https://nodejs.org/api/http.html#http_event_request">request事件</a>就会被调用,提供了两个对象:
+            一个request(<a target="_blank"  rel="noopener noreferrer" href="https://nodejs.org/api/http.html#http_class_http_incomingmessage">http.IncomingMessage对象</a>)(直译就是来消息对象)和
+            一个response(<a target="_blank"  rel="noopener noreferrer" href="https://nodejs.org/api/http.html#http_class_http_serverresponse">http.ServerResponse对象</a>)(直译就是服务响应对象)
           </p>
           <p>这两个对象对处理http调用非常重要</p>
           <p>第一个参数是请求的详细信息,在这个例子里,并没有使用,但你可以访问请求头和请求数据</p>
@@ -108,7 +108,7 @@ export default class Introduction extends Component {
           <p>许多已建立好的库都很受欢迎,这里列举的一些库值得亲们学习:</p>
           <ul>
             {liContent.map((item, index) => {
-              return <li key={index}><a target="_blank" href={item.href}>{item.name}</a>{item.description}</li>
+              return <li key={index}><a target="_blank"  rel="noopener noreferrer" href={item.href}>{item.name}</a>{item.description}</li>
             })}
           </ul>
         </div>

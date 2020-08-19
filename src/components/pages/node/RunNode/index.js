@@ -13,7 +13,7 @@ class RunNode extends Component {
       <div>
         <h1 className='article-reader__headline'>在命令行运行node.js</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/run-nodejs-scripts-from-the-command-line">https://nodejs.dev/learn/run-nodejs-scripts-from-the-command-line</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/run-nodejs-scripts-from-the-command-line">https://nodejs.dev/learn/run-nodejs-scripts-from-the-command-line</a></p>
           <p>一半运行node.js程序的方式就是node全局命令(一旦你安装node)
             然后将想执行的文件的名字传过去
           </p>

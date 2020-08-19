@@ -18,7 +18,7 @@ class Timer extends Component {
       <div>
         <h1 className='article-reader__headline'>js定时器</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/discover-javascript-timers">https://nodejs.dev/learn/discover-javascript-timers</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/discover-javascript-timers">https://nodejs.dev/learn/discover-javascript-timers</a></p>
           <h2>setTimeout</h2>
           <p>写js的时候,你可能会想延迟某个函数的执行</p>
           <p>这就是setTimeout的动作,传一个稍后执行的回调函数,一个时间参数代表多久以后执行,毫秒级:</p>
@@ -33,7 +33,7 @@ class Timer extends Component {
           <p>将会打印before after</p>
           <p>这会很有用在防止阻塞CPU在处理密集型任务的时候,通过将函数排在调度器中,需要重度运算的函数先执行</p>
           <p>注意:有些浏览器会设置setImmediate方法实现同样的效果,但并不是通用标准,
-            <a target="_blank" href="https://caniuse.com/#feat=setimmediate">其他浏览器中不可行</a>,但在node中可以
+            <a target="_blank"  rel="noopener noreferrer" href="https://caniuse.com/#feat=setimmediate">其他浏览器中不可行</a>,但在node中可以
           </p>
           <h2>setInterval()</h2>
           <p>setInterval和setTimeout类似,不同之处在与会相隔特定的时间一直执行回调函数,而不是只执行一次:</p>
@@ -56,7 +56,7 @@ class Timer extends Component {
           <CodeEditor codeContent={codeAll.code8} height="220px"/>
           <p>现在是这个样子:</p>
           <img style={{display:'block', width:600, height:120}} src={timer_4} alt=""/>
-          <p><a target="_blank" href="https://nodejs.org/api/timers.html">定时器模块</a>有setTimeout和setInterval</p>
+          <p><a target="_blank"  rel="noopener noreferrer" href="https://nodejs.org/api/timers.html">定时器模块</a>有setTimeout和setInterval</p>
           <p>node中还有setImmediate(),和setTimeout(() =&gt; {}, 0)效果一样,通常和事件循环一起使用</p>
         </div>
         <div className="clickPage">

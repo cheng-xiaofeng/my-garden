@@ -23,7 +23,7 @@ class UseREPL extends Component {
       <div>
         <h1 className='article-reader__headline'>怎么使用REPL模式</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/how-to-use-the-nodejs-repl">https://nodejs.dev/learn/how-to-use-the-nodejs-repl</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/how-to-use-the-nodejs-repl">https://nodejs.dev/learn/how-to-use-the-nodejs-repl</a></p>
           <p>node命令就是运行我们的node.js脚本的</p>
           <CodeEditor codeContent={startNode} height="40px"/>
           <p>如果我们省略文件名就进入REPL模式:</p>

@@ -14,9 +14,9 @@ class EventEmitter extends Component {
       <div>
         <h1 className='article-reader__headline'>node事件触发</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/the-nodejs-event-emitter">https://nodejs.dev/learn/the-nodejs-event-emitter</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/the-nodejs-event-emitter">https://nodejs.dev/learn/the-nodejs-event-emitter</a></p>
           <p>如果你写过浏览器的js,你就知道用户通过事件来交互有多频繁:鼠标点击,按键盘,鼠标移动等</p>
-          <p>在后端,node的<a target="_blank" href="https://nodejs.org/api/events.html">event module</a>提供了类似的机制</p>
+          <p>在后端,node的<a target="_blank"  rel="noopener noreferrer" href="https://nodejs.org/api/events.html">event module</a>提供了类似的机制</p>
           <p>这个模块有个EventEmitter类,我们可以用来处理事件</p>
           <p>初始化是这样的:</p>
           <CodeEditor codeContent={codeAll.code1} height="60px"/>
@@ -40,7 +40,7 @@ class EventEmitter extends Component {
             <li>removeListener() / off(): 移除事件监听. 跟js的removeEventListener一样,需要跟添加事件监听的名称,函数保持一致</li>
             <li>removeAllListeners(): 移除所有时间监听</li>
           </ul>
-          <p><a target="_blank" href="https://nodejs.org/api/events.html">这里</a>可以获取到更多的细节</p>
+          <p><a target="_blank"  rel="noopener noreferrer" href="https://nodejs.org/api/events.html">这里</a>可以获取到更多的细节</p>
         </div>
         <div className="clickPage">
           <ForwardPages url="/node/async" chooseItem={() => this.props.chooseItem('34')}/>

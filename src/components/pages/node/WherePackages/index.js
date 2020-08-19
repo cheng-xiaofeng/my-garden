@@ -14,7 +14,7 @@ class WherePackages extends Component {
       <div>
         <h1 className='article-reader__headline'>npm从哪里安装包</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/where-does-npm-install-the-packages">https://nodejs.dev/learn/where-does-npm-install-the-packages</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/where-does-npm-install-the-packages">https://nodejs.dev/learn/where-does-npm-install-the-packages</a></p>
           <p>npm安装包有两种方式:</p>
           <ul>
             <li>本地安装</li>

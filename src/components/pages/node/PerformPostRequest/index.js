@@ -14,9 +14,9 @@ class PerformPostRequest extends Component {
       <div>
         <h1 className='article-reader__headline'>使用node做一个http post请求</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/make-an-http-post-request-using-nodejs">https://nodejs.dev/learn/make-an-http-post-request-using-nodejs</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/make-an-http-post-request-using-nodejs">https://nodejs.dev/learn/make-an-http-post-request-using-nodejs</a></p>
           <p>node中有很多方法做一个http post请求,看你想做的有多抽象了</p>
-          <p>最简单的是使用<a target="_blank" href="https://www.kancloud.cn/yunye/axios/234845">axios 库</a></p>
+          <p>最简单的是使用<a target="_blank"  rel="noopener noreferrer" href="https://www.kancloud.cn/yunye/axios/234845">axios 库</a></p>
           <CodeEditor codeContent={codeAll.code1} height="360px"/>
           <p>Axios需要第三方库</p>
           <p>post请求只用node标准库就可以做到,只不过比前两个选择要麻烦一点</p>

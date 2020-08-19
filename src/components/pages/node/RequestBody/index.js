@@ -14,7 +14,7 @@ class RequestBody extends Component {
       <div>
         <h1 className='article-reader__headline'>使用node获取http请求的body数据</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/get-http-request-body-data-using-nodejs">https://nodejs.dev/learn/get-http-request-body-data-using-nodejs</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/get-http-request-body-data-using-nodejs">https://nodejs.dev/learn/get-http-request-body-data-using-nodejs</a></p>
           <p>这是如何提取request的body中的json数据</p>
           <p>如果你用express,那就很简单:用body-parser这个模块</p>
           <p>例如:</p>

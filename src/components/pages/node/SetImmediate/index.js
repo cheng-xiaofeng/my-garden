@@ -14,7 +14,7 @@ class SetImmediate extends Component {
       <div>
         <h1 className='article-reader__headline'>理解setImmediate()</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/understanding-setimmediate">https://nodejs.dev/learn/understanding-setimmediate</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/understanding-setimmediate">https://nodejs.dev/learn/understanding-setimmediate</a></p>
           <p>当你想尽快的执行一些异步代码时,可以选择setImmediate()</p>
           <CodeEditor codeContent={code1} height="80px"/>
           <p>传递给setImmediate()的回调函数会在下一个事件循环的迭代中执行</p>

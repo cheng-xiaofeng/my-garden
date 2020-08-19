@@ -14,7 +14,7 @@ class ReadingFile extends Component {
       <div>
         <h1 className='article-reader__headline'>读取文件</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/reading-files-with-nodejs">https://nodejs.dev/learn/reading-files-with-nodejs</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/reading-files-with-nodejs">https://nodejs.dev/learn/reading-files-with-nodejs</a></p>
           <p>读取文件最简单的方法就是fs.readFile()方法,传入文件路径,编码格式,和回调函数</p>
           <CodeEditor codeContent={codeAll.code1} height="240px"/>
           <p>也可以用同步版本fs.readFileSync()</p>

@@ -14,7 +14,7 @@ class EventsModule extends Component {
       <div>
         <h1 className='article-reader__headline'>事件模块</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/the-nodejs-events-module">https://nodejs.dev/learn/the-nodejs-events-module</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/the-nodejs-events-module">https://nodejs.dev/learn/the-nodejs-events-module</a></p>
           <p>事件模块有一个EventEmitter类,是使用事件模块的关键</p>
           <CodeEditor codeContent={codeAll.code1} height="60px"/>
           <p>事件模块是自产自用(直译为吃自己的狗粮),使用这些事件: </p>

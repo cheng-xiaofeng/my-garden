@@ -14,7 +14,7 @@ class UpdateVersion extends Component {
       <div>
         <h1 className='article-reader__headline'>升级依赖到最新版本</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/update-all-the-nodejs-dependencies-to-their-latest-version">https://nodejs.dev/learn/update-all-the-nodejs-dependencies-to-their-latest-version</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/update-all-the-nodejs-dependencies-to-their-latest-version">https://nodejs.dev/learn/update-all-the-nodejs-dependencies-to-their-latest-version</a></p>
           <p>当你用npm install 包名 安装包的时候,会下载最新版本的包放到node_modules文件夹下,
             入口文件会放到package.json和package-lock.json文件
           </p>

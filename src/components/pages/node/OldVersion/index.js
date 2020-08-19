@@ -14,7 +14,7 @@ class OldVersion extends Component {
       <div>
         <h1 className='article-reader__headline'>安装老版本的包</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/install-an-older-version-of-an-npm-package">https://nodejs.dev/learn/install-an-older-version-of-an-npm-package</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/install-an-older-version-of-an-npm-package">https://nodejs.dev/learn/install-an-older-version-of-an-npm-package</a></p>
           <p>@语法可以安装老的包:</p>
           <CodeEditor codeContent={code1} height="40px"/>
           <p>比如:</p>

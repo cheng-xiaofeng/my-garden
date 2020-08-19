@@ -14,7 +14,7 @@ class UninstallPackage extends Component {
       <div>
         <h1 className='article-reader__headline'>卸载包</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/uninstalling-npm-packages">https://nodejs.dev/learn/uninstalling-npm-packages</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/uninstalling-npm-packages">https://nodejs.dev/learn/uninstalling-npm-packages</a></p>
           <p>使用npm install 包名安装包后,可以这样卸载:</p>
           <CodeEditor codeContent={code1} height="40px"/>
           <p>使用-s, 或者--save,会从package.json文件中移除指针</p>

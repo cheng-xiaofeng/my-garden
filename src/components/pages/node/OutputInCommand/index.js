@@ -26,9 +26,9 @@ class OutputInCommand extends Component {
       <div>
         <h1 className='article-reader__headline'>输出到命令行</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/output-to-the-command-line-using-nodejs">https://nodejs.dev/learn/output-to-the-command-line-using-nodejs</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/output-to-the-command-line-using-nodejs">https://nodejs.dev/learn/output-to-the-command-line-using-nodejs</a></p>
           <h2>使用console模块输出</h2>
-          <p>node.js提供了<a target="_blank" href="https://nodejs.org/api/console.html">console</a>模块,
+          <p>node.js提供了<a target="_blank"  rel="noopener noreferrer" href="https://nodejs.org/api/console.html">console</a>模块,
             这个模块有许多有用的方法可以跟命令行互动
           </p>
           <p>基本上跟浏览器的console对象一样</p>
@@ -75,14 +75,14 @@ class OutputInCommand extends Component {
           <p>比如:</p>
           <CodeEditor codeContent={code9} height="40px"/>
           <p>在REPL中试一下,会打出黄色的hi</p>
-          <p>然而这时比较低级的方法.最简单的方式是使用库.<a target="_blank" href="https://github.com/chalk/chalk">Chalk</a>
+          <p>然而这时比较低级的方法.最简单的方式是使用库.<a target="_blank"  rel="noopener noreferrer" href="https://github.com/chalk/chalk">Chalk</a>
           就是这样一个库,除了可以上色还一个加其他样式,比如字体加重,斜体或者下划线</p>
           <p>用npm装上Chalk后,就可以使用了:</p>
           <CodeEditor codeContent={code10} height="80px"/>
           <h2>使用chalk.yellow比记转译序列代码可简单多了.代码可读性也更强</h2>
           <p>点击上面的链接获取更多的例子</p>
           <h2>创建进度条</h2>
-          <p><a target="_blank" href="https://www.npmjs.com/package/progress">Progress</a>这个可以在控制台创建进度条,这样安装</p>
+          <p><a target="_blank"  rel="noopener noreferrer" href="https://www.npmjs.com/package/progress">Progress</a>这个可以在控制台创建进度条,这样安装</p>
           <p>这个片段创建了一个10步的进度条,每100毫秒完成一步.当进度条完成后清除定时器:</p>
           <CodeEditor codeContent={code11} height="240px"/>
         </div>

@@ -14,7 +14,7 @@ class PackageLockJson extends Component {
       <div>
         <h1 className='article-reader__headline'>package-lock.json文件</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/the-package-lock-json-file">https://nodejs.dev/learn/the-package-lock-json-file</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/the-package-lock-json-file">https://nodejs.dev/learn/the-package-lock-json-file</a></p>
           <p>在版本5中,npm引入了package-lock.json文件</p>
           <p>这是什么?你已经知道了package.json文件,这个更常见,存在的时间也更长</p>
           <p>这个文件的目的是追踪下载的包的精准版本,确保产品可以用同样的方法再生产即使包被升级了</p>

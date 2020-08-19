@@ -14,7 +14,7 @@ class CallbackFunction extends Component {
       <div>
         <h1 className='article-reader__headline'>js异步编程和回调</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/javascript-asynchronous-programming-and-callbacks">https://nodejs.dev/learn/javascript-asynchronous-programming-and-callbacks</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/javascript-asynchronous-programming-and-callbacks">https://nodejs.dev/learn/javascript-asynchronous-programming-and-callbacks</a></p>
           <h2>编程语言中的异步</h2>
           <p>计算机就是异步的</p>
           <p>异步就是程序可以独立于主程序流发生</p>

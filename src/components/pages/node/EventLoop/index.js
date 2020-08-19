@@ -19,7 +19,7 @@ class EventLoop extends Component {
       <div>
         <h1 className='article-reader__headline'>node事件循环</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/the-nodejs-event-loop">https://nodejs.dev/learn/the-nodejs-event-loop</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/the-nodejs-event-loop">https://nodejs.dev/learn/the-nodejs-event-loop</a></p>
           <h2>简介</h2>
           <p>事件循环是理解node最重要的概念之一</p>
           <p>为什么这么重要?因为它揭示了node为什么可以异步,非阻塞I/O.也解释了killer app(极度受欢迎的应用软件)

@@ -14,7 +14,7 @@ class FsModule extends Component {
       <div>
         <h1 className='article-reader__headline'>fs模块</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/the-nodejs-fs-module">https://nodejs.dev/learn/the-nodejs-fs-module</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/the-nodejs-fs-module">https://nodejs.dev/learn/the-nodejs-fs-module</a></p>
           <p>fs模块有很多非常有用的功能,可以访问文件系统,并进行交互</p>
           <p>作为node的核心模块,无需安装,require进来即可使用:</p>
           <CodeEditor codeContent={codeAll.code1} height="40px"/>
@@ -55,7 +55,7 @@ class FsModule extends Component {
             <li>fs.writeSync()</li>
           </ul>
           <p>两者区别很大</p>
-          <p>注意: node10有一个<a target="_blank" href="https://nodejs.org/api/fs.html#fs_fs_promises_api"> experimental support</a>
+          <p>注意: node10有一个<a target="_blank"  rel="noopener noreferrer" href="https://nodejs.org/api/fs.html#fs_fs_promises_api"> experimental support</a>
             的promise API
           </p>
           <p>来检测一下fs.rename(),异步API需要回调函数配合使用:</p>

@@ -14,7 +14,7 @@ class PackageJson extends Component {
       <div>
         <h1 className='article-reader__headline'>package.json指南</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/the-package-json-guide">https://nodejs.dev/learn/the-package-json-guide</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/the-package-json-guide">https://nodejs.dev/learn/the-package-json-guide</a></p>
           <p>如果你使用js,或者跟js项目,node,或者前端项目打过交道,你一定见过package.json文件</p>
           <p>那是什么?关于它,你应该知道些什么,有了它,你有做些什么?</p>
           <p>package.json就像你项目的清单一样,可以做许多完全独立的事情.它是工具配置的仓库.也是
@@ -49,7 +49,7 @@ class PackageJson extends Component {
           <h2>属性分解说明</h2>
           <p>这块区域描述的是你能使用的属性的细节.我们说是"package",其实也适用本地程序中不叫package
           但其同样作用的东西</p>
-          <p>许多属性只用在<a target="_blank" href="https://www.npmjs.com/">这里</a>,其他的会和你的代码交互,比如npm</p>
+          <p>许多属性只用在<a target="_blank"  rel="noopener noreferrer" href="https://www.npmjs.com/">这里</a>,其他的会和你的代码交互,比如npm</p>
           <h2>name</h2>
           <p>设置包的名称</p>
           <p>例如:</p>
@@ -92,7 +92,7 @@ class PackageJson extends Component {
           <p>这个属性是个关键字数组,表示你的包能做什么</p>
           <p>例子:</p>
           <CodeEditor codeContent={codeAll.code13} height="140px"/>
-          <p>这可以帮助人们在<a target="_blank" href="https://www.npmjs.com/">这里</a>找到相似的包</p>
+          <p>这可以帮助人们在<a target="_blank"  rel="noopener noreferrer" href="https://www.npmjs.com/">这里</a>找到相似的包</p>
           <h2>description</h2>
           <p>这个属性是包的简述</p>
           <p>例子:</p>
@@ -148,8 +148,8 @@ class PackageJson extends Component {
           <p>说明你想支持的浏览器和版本,被Babel, Autoprefixer和其他工具引用,给浏览器添加所需的回调等东西</p>
           <p>例如:</p>
           <CodeEditor codeContent={codeAll.code28} height="130px"/>
-          <p>这个配置说明你想支持至少1%使用率(<a target="_blank" href="https://caniuse.com/">CanIUse.com</a>)的所有浏览器最新的两个版本,除了IE8及以下</p>
-          <a target="_blank" href="https://www.npmjs.com/package/browserslist">(查看更多)</a>
+          <p>这个配置说明你想支持至少1%使用率(<a target="_blank"  rel="noopener noreferrer" href="https://caniuse.com/">CanIUse.com</a>)的所有浏览器最新的两个版本,除了IE8及以下</p>
+          <a target="_blank"  rel="noopener noreferrer" href="https://www.npmjs.com/package/browserslist">(查看更多)</a>
           <h2>Command-specific properties</h2>
           <p>package.json文件也能持有特定命令配置,比如Babel, ESLint等</p>
           <p>每个都有一个特定属性,像eslintConfig, babel.这些都是特定命令,你可以在各自的command/project文件中找到他们的用法</p>  

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { 
   ForwardPages,
   NextPage,
-  CodeEditor
 } from '../../../commonComponents'
 export default class TheDiffrences extends Component {
   
@@ -15,7 +14,7 @@ export default class TheDiffrences extends Component {
       <div>
         <h1 className='article-reader__headline'>node.js跟浏览器的不同之处</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/differences-between-nodejs-and-the-browser">https://nodejs.dev/learn/differences-between-nodejs-and-the-browser</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/differences-between-nodejs-and-the-browser">https://nodejs.dev/learn/differences-between-nodejs-and-the-browser</a></p>
           <p>浏览器和node.js都是将JavaScript作为编程语言</p>
           <p>浏览器中运行的程序和node.js程序完全不同</p>
           <p>尽管都是JavaScript,但是有一些关键点的不通使得两者的体验差别很大</p>

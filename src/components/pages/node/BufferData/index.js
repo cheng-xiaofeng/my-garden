@@ -14,13 +14,13 @@ class BufferData extends Component {
       <div>
         <h1 className='article-reader__headline'>buffer</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/nodejs-buffers">https://nodejs.dev/learn/nodejs-buffers</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/nodejs-buffers">https://nodejs.dev/learn/nodejs-buffers</a></p>
           <h2>什么是buffer?</h2>
           <p>一个buffer就是一块内存区间.js开发者对这个概念远不如C C++或者Go开发者熟悉(或者其他使用
             系统编程语言的开发者),他们每天都跟内存打交道</p>
           <p>它代表一个固定大小(不可改变大小)的内存块,分配在v8 js引擎之外</p>
           <p>你可以将buffer当成是一个整数的数组,每个都代表一个字节的数据</p>
-          <p>它是由<a target="_blank" href="https://nodejs.org/api/buffer.html">buffer 类</a>部署的</p>
+          <p>它是由<a target="_blank"  rel="noopener noreferrer" href="https://nodejs.org/api/buffer.html">buffer 类</a>部署的</p>
           <h2>为什么我们需要buffer?</h2>
           <p>引入buffer是为了帮助开发者在一个只处理字符串而不是二进制的生态系统中处理二进制的数据</p>
           <p>buffer和数据流紧密相连,当数据流处理器接受数据太快而忙不过来的时候,就把数据放到buffer中</p>

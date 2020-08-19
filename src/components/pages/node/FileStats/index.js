@@ -14,7 +14,7 @@ class FileStats extends Component {
       <div>
         <h1 className='article-reader__headline'>文件stats</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/nodejs-file-stats">https://nodejs.dev/learn/nodejs-file-stats</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/nodejs-file-stats">https://nodejs.dev/learn/nodejs-file-stats</a></p>
           <p>我们可以用node来检查文件附带的详细信息</p>
           <p>通常使用fs模块的stat方法</p>
           <p>传入文件路作为参数,node获取到文件的详细信息后就会调用传入的回调函数,有两个参数:

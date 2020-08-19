@@ -14,7 +14,7 @@ class ExitNode extends Component {
       <div>
         <h1 className='article-reader__headline'>退出node.js</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/how-to-exit-from-a-nodejs-program">https://nodejs.dev/learn/how-to-exit-from-a-nodejs-program</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/how-to-exit-from-a-nodejs-program">https://nodejs.dev/learn/how-to-exit-from-a-nodejs-program</a></p>
           <p>有很多方法可以终止node.js进程</p>
           <p>在控制台运行时可以用Ctrl+C关闭,但这里我们想说的是以编程的方式退出</p>
           <p>我们先从最极端的方式开始,看一下为什么最好不要用这种方式</p>
@@ -26,7 +26,7 @@ class ExitNode extends Component {
           <p>如果你可以接受,你可以传一个代表操作退出的数字</p>
           <CodeEditor codeContent={processExit} height="40px"/>
           <p>默认是0,也就是代表成功.不同的退出码有不同的含义,也就是你可以用自己的程序体系</p>
-          <p>你可以在<a target="_blank" href="https://nodejs.org/api/process.html#process_exit_codes">这里</a>看到跟多的信息</p>
+          <p>你可以在<a target="_blank"  rel="noopener noreferrer" href="https://nodejs.org/api/process.html#process_exit_codes">这里</a>看到跟多的信息</p>
           <p>你也可以设置process.exitCode这个属性:</p>
           <CodeEditor codeContent={processExit2} height="40px"/>
           <p>程序稍后会退出,node.js会返回这个退出码</p>

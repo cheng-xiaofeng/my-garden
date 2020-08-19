@@ -14,7 +14,7 @@ class GlobalOrlocally extends Component {
       <div>
         <h1 className='article-reader__headline'>全局包还是本地包</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/npm-global-or-local-packages">https://nodejs.dev/learn/npm-global-or-local-packages</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/npm-global-or-local-packages">https://nodejs.dev/learn/npm-global-or-local-packages</a></p>
           <p>两者的不同:</p>
           <ul>
             <li>本地包是安装在运行npm install 包名 的目录下的node_modules文件夹</li>

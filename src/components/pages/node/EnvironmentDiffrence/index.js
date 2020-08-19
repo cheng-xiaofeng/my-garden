@@ -14,7 +14,7 @@ class EnvironmentDiffrence extends Component {
       <div>
         <h1 className='article-reader__headline'>开发环境和生产环境的不同</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/nodejs-the-difference-between-development-and-production">https://nodejs.dev/learn/nodejs-the-difference-between-development-and-production</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/nodejs-the-difference-between-development-and-production">https://nodejs.dev/learn/nodejs-the-difference-between-development-and-production</a></p>
           <p>生产环境和开发环境有不同的配置项</p>
           <p>node会假设你在开发环境,不过你可以更改环境变量NODE_ENV=production来告诉node你在生产环境</p>
           <p>这么做:</p>

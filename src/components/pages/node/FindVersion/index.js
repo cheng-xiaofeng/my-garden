@@ -14,7 +14,7 @@ class FindVersion extends Component {
       <div>
         <h1 className='article-reader__headline'>找到已安装包的版本</h1>
         <div className='articleConent'>
-          <p>原文地址: <a target="_blank" href="https://nodejs.dev/learn/find-the-installed-version-of-an-npm-package">https://nodejs.dev/learn/find-the-installed-version-of-an-npm-package</a></p>
+          <p>原文地址: <a target="_blank"  rel="noopener noreferrer" href="https://nodejs.dev/learn/find-the-installed-version-of-an-npm-package">https://nodejs.dev/learn/find-the-installed-version-of-an-npm-package</a></p>
           <p>查看所有包的最新版本一级他们的依赖:</p>
           <CodeEditor codeContent={code1} height="40px"/>
           <p>例如:</p>
