@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import { Layout, Button } from 'antd'
-import {getdata} from '../service/index'
+import { getdata1 } from '../store/actions/changePageAction'
+@connect()
 class HomePage extends Component {
   click = () => {
-    getdata().then(data => {
-      console.log('222', data)
-    })
+    this.props.dispatch(getdata1())
   }
   render() {
     return (
