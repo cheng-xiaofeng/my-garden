@@ -11,9 +11,9 @@ export function changePage(itemKey) {
   }))
 } 
 
-export function getdata1() {
+export function getdata1(obj) {
   return dispatch => {
-    return getdata().then(data => {
+    return getdata(obj).then(data => {
       dispatch({
         type: GETDATA,
         payload: {

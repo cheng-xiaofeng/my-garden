@@ -5,7 +5,7 @@ import { getdata1 } from '../store/actions/changePageAction'
 @connect()
 class HomePage extends Component {
   click = () => {
-    this.props.dispatch(getdata1())
+    this.props.dispatch(getdata1({name: 'firstCat'}))
   }
   render() {
     return (

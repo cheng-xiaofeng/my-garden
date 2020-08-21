@@ -4,8 +4,8 @@ import { all } from 'redux-saga/effects'
 
 function* getdata1 (action) {
   try {
-    const data = yield call(getdata)
-    yield put({type: 'GETDATA', data})
+    // const data = yield call(getdata)
+    // yield put({type: 'GETDATA', data})
   } catch (error) {
     
   }

@@ -1,5 +1,5 @@
 import request from "./request";
 
-export function getdata() {
-  return request('/', 'get')
+export function getdata(data) {
+  return request('/cat', 'post', data)
 }
