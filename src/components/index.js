@@ -1,30 +1,27 @@
-import React, { Component } from 'react';
-import { Layout } from 'antd'
+import React, { Component } from 'react'
+
 import {
-  HashRouter as Router,
   Switch,
-  Route
+  Route,
+  BrowserRouter as Router,
 } from 'react-router-dom'
-import MainHeader from './header'
-import NodeContent from './pages/node'
-import HomePage from './HomePage';
-import BlogContent from './pages/blog'
-class PagesIndex extends Component {
+import LoginPage from './pages/love/loginPage'
+import SignIn from './pages/love/signin'
+import GetPassWord from './pages/love/getPassword'
+export default class LoveLogin extends Component {
+
   render() {
     return (
-      <Layout className='topLayout' style={{height: '100%'}}>
+      <div className="loginPage">
         <Router>
-          <MainHeader />
           <Switch>
-            <Route path='/' exact component={HomePage}/>
-            <Route path='/my-garden' exact component={HomePage}/>
-            <Route path="/node*" exact component={NodeContent}/>
-            <Route path="/myblog*" exact component={BlogContent}/>
+            <Route path='/*' component={LoginPage} />
+            <Route path='/signin' component={SignIn} />
+            <Route path='/getPassword' component={GetPassWord} />
           </Switch>
         </Router>
-      </Layout>
-    );
+      </div>
+
+    )
   }
 }
-
-export default PagesIndex;

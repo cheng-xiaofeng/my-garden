@@ -53,6 +53,8 @@ import StreamData from './pages/node/StreamData/'
 import EnvironmentDiffrence from './pages/node/EnvironmentDiffrence/'
 import HandlingError from './pages/node/HandlingError/'
 import LogObject from './pages/node/LogObject/'
+import SignIn from './pages/love/signin'
+import GetPassword from './pages/love/getPassword'
 const routers = [{
   index: '1',
   name: 'node简介',
@@ -384,6 +386,24 @@ const routers = [{
   path: '/node/logObject',
   component: LogObject
 }, ]
+const loverouter = [{
+  index: '1',
+  to: '/',
+  path: '/',
+  component: Login
+},{
+  index: '2',
+  to: '/signin',
+  path: '/signin',
+  component: SignIn
+},{
+  index: '1',
+  to: '/getPassword',
+  path: '/getPassword',
+  component: GetPassword
+}, ]
 export {
   routers,
+  loverouter
 }
+
